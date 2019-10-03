@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // set up motion
-speed = 12;
+speed = 50;
 
 // tile map info
 var l = layer_get_id("Bulletproof_Mask");

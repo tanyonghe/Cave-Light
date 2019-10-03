@@ -14,7 +14,7 @@ if (keyboard_check(ord("Q"))) {
 var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
 var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
 if (t1 != 0 || t2 != 0) {
-	if (keyboard_check(vk_space)) {
+	if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
 		v_speed = -jump_impulse;
 	}
 }
@@ -65,7 +65,7 @@ if (mouse_check_button(mb_left)) {
 // platform
 y -= dy;
 if (dy >= 0 && place_meeting(x, y + 1, obj_platform) && y < obj_platform.y - obj_platform.sprite_height/2) {
-	if (keyboard_check(vk_space)) {
+	if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
 		v_speed = -jump_impulse;
 	} else {
 		v_speed = 0;
