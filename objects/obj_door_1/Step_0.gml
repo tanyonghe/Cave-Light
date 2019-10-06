@@ -7,4 +7,8 @@ if (destroyed) {
 	var data = tilemap_get_at_pixel(tilemap, 128, 0);
 	tilemap_set_at_pixel(tilemap, data, x - 32, y - 64);
 	tilemap_set_at_pixel(tilemap, data, x - 32, y);
+	var tilemap = layer_tilemap_get_id(layer_get_id("Bulletproof_Mask"));
+	var data = tilemap_get_at_pixel(tilemap, 128, 0);
+	tilemap_set_at_pixel(tilemap, data, x - 32, y - 64);
+	tilemap_set_at_pixel(tilemap, data, x - 32, y);
 }
