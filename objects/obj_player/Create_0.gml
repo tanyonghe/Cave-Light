@@ -6,7 +6,6 @@ move_speed = 8;
 jump_impulse = 14;
 grav = 0.75;
 v_speed = 0;
-on_platform = true;
 
 // tile map info
 var l = layer_get_id("Collision_Map");

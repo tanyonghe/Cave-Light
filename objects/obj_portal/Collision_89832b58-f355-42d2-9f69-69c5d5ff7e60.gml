@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-destroyed = false;
+if (keyboard_check(ord("W"))) room_goto_next();

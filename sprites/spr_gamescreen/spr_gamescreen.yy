@@ -6,7 +6,7 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 767,
+    "bbox_bottom": 895,
     "bbox_left": 0,
     "bbox_right": 1279,
     "bbox_top": 0,
@@ -16,34 +16,34 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "633f2693-ffd0-49c6-b1bb-9e1691247344",
+            "id": "f0832796-b037-406a-bd13-8d0410d6e7a7",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "22a0cd70-9331-4755-998e-b70d0581503f",
             "compositeImage": {
-                "id": "88b5ba52-36b5-44ad-9737-ef63b8641e15",
+                "id": "af8c361b-271a-4550-b11a-138c05514448",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "633f2693-ffd0-49c6-b1bb-9e1691247344",
+                "FrameId": "f0832796-b037-406a-bd13-8d0410d6e7a7",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "18dbadd0-0e8b-4e13-abf4-0a9a0ec27b6d",
+                    "id": "7c3fef03-f8c3-450f-a891-5d641684b50a",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "633f2693-ffd0-49c6-b1bb-9e1691247344",
-                    "LayerId": "30ff4fc7-be7e-4399-89fc-bf0d9ad38abc"
+                    "FrameId": "f0832796-b037-406a-bd13-8d0410d6e7a7",
+                    "LayerId": "7eddbdac-8401-4075-8bfe-8a0ea84cc7a8"
                 }
             ]
         }
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 768,
+    "height": 896,
     "layers": [
         {
-            "id": "30ff4fc7-be7e-4399-89fc-bf0d9ad38abc",
+            "id": "7eddbdac-8401-4075-8bfe-8a0ea84cc7a8",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "22a0cd70-9331-4755-998e-b70d0581503f",
@@ -66,5 +66,5 @@
     "type": 0,
     "width": 1280,
     "xorig": 640,
-    "yorig": 384
+    "yorig": 448
 }

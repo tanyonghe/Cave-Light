@@ -34,7 +34,7 @@ if (dy > 0) { // down
 	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
 	
 	if (t1 != 0 || t2 != 0) {
-		y = ((bbox_top + 64) & 63) - sprite_bbox_top;
+		y = ((bbox_top + 64) & ~63) - sprite_bbox_top;
 		v_speed = 0;
 	}
 }
