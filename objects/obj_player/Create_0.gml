@@ -2,10 +2,11 @@
 // You can write your code in this editor
 
 // basic move vars
-move_speed = 8;
+move_speed = 6;
 jump_impulse = 14;
 grav = 0.75;
 v_speed = 0;
+prev_dx = 0;
 
 // tile map info
 var l = layer_get_id("Collision_Map");
