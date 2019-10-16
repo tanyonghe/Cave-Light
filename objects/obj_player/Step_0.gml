@@ -85,8 +85,9 @@ if (dx > 0) { // right
 }
 
 // shoot
-if (mouse_check_button(mb_left)) {
-	instance_create_layer(x, y, "Weapons", obj_laser);
+if (mouse_check_button(mb_left) && cooldown == 0) {
+	instance_create_layer(x, y, "Weapons", obj_bullet);
+	cooldown = 10;
 }
 
 // platform
@@ -101,3 +102,5 @@ if (dy >= 0 && place_meeting(x, y + 1, obj_platform) && y < obj_platform.y - obj
 } else {
 	y += dy;
 }
+
+cooldown = max(0, cooldown - 1);

@@ -8,6 +8,9 @@ grav = 0.75;
 v_speed = 0;
 prev_dx = 0;
 
+// shooting vars
+cooldown = 0;
+
 // tile map info
 var l = layer_get_id("Collision_Map");
 tilemap = layer_tilemap_get_id(l);
