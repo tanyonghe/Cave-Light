@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+pause = false;
+
 // basic move vars
 move_speed = 6;
 jump_impulse = 14;

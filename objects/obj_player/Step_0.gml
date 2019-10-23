@@ -6,12 +6,6 @@ var dx = move_speed * (keyboard_check(ord("D")) - keyboard_check(ord("A")));
 var dy = v_speed;
 v_speed += grav;
 
-if (keyboard_check(ord("Q"))) {
-	game_restart();
-} else if (keyboard_check(ord("R"))) {
-	room_restart();
-}
-
 var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
 var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
 if (t1 != 0 || t2 != 0) {
@@ -35,7 +29,7 @@ if (dy > 0) { // down
 	}
 	
 	//coyote
-	if (dx != 0) {
+	/*if (dx != 0) {
 		prev_dx = dx;
 	} else if (prev_dx > 0) {
 		dx = max(prev_dx - 0.1, 0);
@@ -43,7 +37,7 @@ if (dy > 0) { // down
 	} else if (prev_dx < 0) {
 		dx = min(prev_dx + 0.1, 0);
 		prev_dx = dx;
-	}
+	}*/
 	
 } else { // up 
 	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
@@ -55,7 +49,7 @@ if (dy > 0) { // down
 	}
 	
 	//coyote
-	if (dx != 0) {
+	/*if (dx != 0) {
 		prev_dx = dx;
 	} else if (prev_dx > 0) {
 		dx = max(prev_dx - 0.1, 0);
@@ -63,7 +57,7 @@ if (dy > 0) { // down
 	} else if (prev_dx < 0) {
 		dx = min(prev_dx + 0.1, 0);
 		prev_dx = dx;
-	}
+	}*/
 }
 
 // do horizontal movement
