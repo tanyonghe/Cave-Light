@@ -84,16 +84,17 @@ if (dx > 0) { // right
 	}
 }
 
-// shoot - creates actual laser hitbox (drawing is in draw event)
+// shoot - enables the alarm for laser hitbox's fire rate
 dir = point_direction(x, y, mouse_x, mouse_y); // update dir first, used both in step and draw
 if (mouse_check_button(mb_left)) {
 	if alarm[0] = -1 {
 		alarm[0] = room_speed/fire_rate;
-		with (instance_create_layer(x+gunOffsetX, y+gunOffsetY, "Instances", obj_laser_hit)) {
-			image_angle = other.dir; 
-			image_xscale = other.laser_length + 4; // add abit in case laser stops before obj
-			image_yscale = other.laser_width;
-		}
+//		with (instance_create_layer(x+gunOffsetX, y+gunOffsetY, "Instances", obj_laser_hit)) {
+//			image_angle = other.dir; 
+//			image_xscale = other.laser_length + 4; // add a bit in case laser stops before obj
+//			image_yscale = other.laser_width;
+//			hitboxBeamType = beamTypes.normal; // have to change if player picks up crystal
+//		}
 	}
 }
 
