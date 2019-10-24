@@ -16,3 +16,7 @@ if (keyboard_check_pressed(vk_escape)) {
 		instance_activate_all();
 	}
 }
+
+if (game_over == true && game_over_render == false) {
+	game_over_render = true;
+}
