@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "9e2a3881-fe86-4d1a-be96-5bc0d6e071d4",
+            "Value": {
+                "id": "15f02cbf-f00f-4aa0-9065-28c26491a6a1",
+                "resourcePath": "rooms\\Duplicate_Level\\Duplicate_Level.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a5c34720-f3f1-4dbd-b790-5530c2085b97",
             "Value": {
                 "id": "c2857620-baf6-4bc1-a290-20c2a0784829",
@@ -628,14 +636,6 @@
                 "id": "34786bf5-044b-4dd3-b8a7-91c2b8848034",
                 "resourcePath": "scripts\\create_laser\\create_laser.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "c8bc1c19-1251-4828-8b51-f0e7162d52c1",
-            "Value": {
-                "id": "53189fdf-848c-4786-8e4e-cd982814f9d6",
-                "resourcePath": "rooms\\DUP\\DUP.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
