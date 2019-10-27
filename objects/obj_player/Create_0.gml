@@ -13,7 +13,7 @@ prev_dx = 0;
 // shooting vars
 cooldown = 0;
 dir = 0; //aim
-fire_rate = 10; //times per second
+fire_rate = 15; //times per second
 amplified_laser_damage = 10; //each time
 frost_laser_damage = 5;
 surge_laser_damage = 7;

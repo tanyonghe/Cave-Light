@@ -1,18 +1,28 @@
 {
-    "id": "82f24ff2-be4b-4417-bc83-6847177d5ede",
+    "id": "c8f271d1-dc04-440b-8f29-bf5d2b8691c6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_laser_hit",
+    "name": "obj_door_generic",
     "eventList": [
         {
-            "id": "40277ed1-7c31-470e-a2b2-f50ab78f2484",
+            "id": "3e1a0dbb-0d9e-4431-94a7-a345df90cae8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "82f24ff2-be4b-4417-bc83-6847177d5ede"
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "c8f271d1-dc04-440b-8f29-bf5d2b8691c6"
+        },
+        {
+            "id": "020389d0-0860-4190-aae7-38d64cda0366",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c8f271d1-dc04-440b-8f29-bf5d2b8691c6"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "cd2fd94f-9e29-4115-a710-c8414d9dea85",
+    "spriteId": "bca04c25-7187-4184-bede-b451fa9ab6c5",
     "visible": true
 }
