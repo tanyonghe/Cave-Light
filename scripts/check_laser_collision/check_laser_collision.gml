@@ -13,7 +13,15 @@ array[3] = obj_enemy;
 array[4] = obj_bat;
 array[5] = obj_rat;
 array[6] = obj_mirror;
+// remember to update the loop when changing array size
 
+// check mirrors first, so we can place mirrors above tiles and they have precedence
+
+//if collision_point(currX, currY, obj_mirror, 1, 1) {
+//		show_debug_message(">> COLLIDED WITH MIRROR");
+//		return true;
+//}
+		
 var collision_map_layer_id = layer_get_id("Collision_Map");
 var map_id = layer_tilemap_get_id(collision_map_layer_id);
 if tilemap_get_at_pixel(map_id, currX, currY) {
