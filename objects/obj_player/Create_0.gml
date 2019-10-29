@@ -4,7 +4,7 @@
 pause = false;
 
 // basic move vars
-move_speed = 5;
+move_speed = 6;
 jump_impulse = 14;
 grav = 0.75;
 v_speed = 0;

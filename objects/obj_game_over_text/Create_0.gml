@@ -4,5 +4,5 @@
 var cx = camera_get_view_x(view_camera[0]);
 var cy = camera_get_view_y(view_camera[0]);
 
-x = cx + 960/2 - 150;
-y = cy + 576/2 + 210;
+x = cx + window_get_width()/2 - 150;
+y = cy + window_get_height()/2 + 210;
