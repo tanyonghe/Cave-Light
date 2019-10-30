@@ -823,6 +823,14 @@
             }
         },
         {
+            "Key": "c7c712b5-b23c-4fa4-b3dc-57c2fffe4149",
+            "Value": {
+                "id": "6f0684e4-d863-4698-ab3f-e3ec6bbf887a",
+                "resourcePath": "sprites\\spr_room_gun\\spr_room_gun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c89bb65d-412b-4b91-ab22-5de87be66bdb",
             "Value": {
                 "id": "34786bf5-044b-4dd3-b8a7-91c2b8848034",
@@ -1122,7 +1130,7 @@
             "Key": "fd429533-ff8a-4825-8d5c-ce93f94f8177",
             "Value": {
                 "id": "da050ef8-30e3-4e76-b59b-bea58fd8340a",
-                "resourcePath": "objects\\obj_gun\\obj_gun.yy",
+                "resourcePath": "objects\\obj_room_gun\\obj_room_gun.yy",
                 "resourceType": "GMObject"
             }
         },

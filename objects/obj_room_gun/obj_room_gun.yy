@@ -2,7 +2,7 @@
     "id": "fd429533-ff8a-4825-8d5c-ce93f94f8177",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_gun",
+    "name": "obj_room_gun",
     "eventList": [
         {
             "id": "f8ca7dec-b527-4660-8ee9-11f32bee5bef",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "cc6cc42a-5615-4cfd-8a85-0d91255b4849",
+    "spriteId": "c7c712b5-b23c-4fa4-b3dc-57c2fffe4149",
     "visible": true
 }
