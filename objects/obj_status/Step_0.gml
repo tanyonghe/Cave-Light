@@ -17,6 +17,8 @@ if (keyboard_check_pressed(vk_escape)) {
 	}
 }
 
-if (game_over == true && game_over_render == false) {
+if (global.game_over == true && game_over_render == false) {
 	game_over_render = true;
+	instance_create_layer(0, 0, "Instructions", obj_game_over);
+	instance_create_layer(0, 0, "Instructions", obj_game_over_text);
 }

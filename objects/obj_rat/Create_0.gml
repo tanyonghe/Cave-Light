@@ -4,11 +4,11 @@
 enemy_life = 5;
 
 // basic move vars
-move_speed = 6;
-jump_impulse = 14;
-grav = 0.75;
-v_speed = 0;
-dx_in_air = 0;
+move_speed = 4;
+//jump_impulse = 14;
+//grav = 0.75;
+//v_speed = 0;
+//dx_in_air = 0;
 
 
 // tile map info
