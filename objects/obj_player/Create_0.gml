@@ -8,7 +8,7 @@ move_speed = 6;
 jump_impulse = 14;
 grav = 0.75;
 v_speed = 0;
-prev_dx = 0;
+dx_in_air = 0;
 
 // shooting vars
 cooldown = 0;

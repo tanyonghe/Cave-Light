@@ -8,7 +8,7 @@
         "d4c17760-8675-408a-9da5-e33834e487cb"
     ],
     "filterType": "GMObject",
-    "folderName": "include in all",
+    "folderName": "general must-haves",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

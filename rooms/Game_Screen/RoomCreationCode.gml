@@ -1,0 +1,1 @@
+global.hasGun = false;

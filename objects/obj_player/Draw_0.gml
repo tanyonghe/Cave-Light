@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (mouse_check_button(mb_left)) {
+if (mouse_check_button(mb_left) && global.hasGun == true) {
 	show_debug_message(dir);
 	xx = x + gunOffsetX;
 	yy = y + gunOffsetY;
