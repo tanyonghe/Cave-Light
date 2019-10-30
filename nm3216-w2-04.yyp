@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "2a7a92d5-b1b3-44f6-9d21-bbd7715402bd",
+            "Value": {
+                "id": "dee3d583-c400-42c9-aed1-d36508be8cac",
+                "resourcePath": "sprites\\spr_enemy_movement\\spr_enemy_movement.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "32cb65b5-ca9d-494a-b98a-9dfe20f01831",
             "Value": {
                 "id": "32ae3fac-8d6f-4593-8f1a-7df9c8f5b049",
@@ -492,6 +500,14 @@
                 "id": "7795a6b2-db81-4e5c-82ae-99b5a2eb15a0",
                 "resourcePath": "rooms\\Level_2\\Level_2.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "87626378-5167-47d4-85dd-c65797373880",
+            "Value": {
+                "id": "f02257dc-c953-4437-a049-7ef23dbde680",
+                "resourcePath": "tilesets\\til_enemy_movement\\til_enemy_movement.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
