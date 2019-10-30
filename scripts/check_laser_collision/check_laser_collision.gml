@@ -6,13 +6,14 @@ currX = argument[0];
 currY = argument[1];
 //TODO make this global and initialize only once
 var array; // everything a laser should collide with
-array[0] = obj_crystal_ice;
+array[0] = obj_crystal_ice; 
 array[1] = obj_ice;
 array[2] = obj_platform;
 array[3] = obj_enemy;
-array[4] = obj_bat;
-array[5] = obj_rat;
-array[6] = obj_mirror;
+array[4] = obj_bat_resting;
+array[5] = obj_bat_moving;
+array[6] = obj_boar;
+array[7] = obj_mirror;
 // remember to update the loop when changing array size
 
 // check mirrors first, so we can place mirrors above tiles and they have precedence
@@ -30,7 +31,7 @@ if tilemap_get_at_pixel(map_id, currX, currY) {
 
 var hasCollided = false;
 
-for (var i = 0; i < 7; i++) {
+for (var i = 0; i < 8; i++) {
 	if collision_point(currX, currY, array[i], 1, 1) {
 		show_debug_message(">> COLLIDED WITH " + object_get_name(array[i]));
 		hasCollided = true;
