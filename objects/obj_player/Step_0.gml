@@ -11,6 +11,7 @@ var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index
 if (t1 != 0 || t2 != 0) {
 	if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
 		v_speed = -jump_impulse;
+		dx_in_air = dx;
 	}
 }
 
@@ -23,9 +24,12 @@ if (dy > 0) { // down
 	if (t1 != 0 || t2 != 0) {
 		y = ((bbox_bottom & ~31) - 1) - sprite_bbox_bottom;
 		v_speed = 0;
-		
-		//coyote
-		prev_dx = 0;
+		dx_in_air = 0;
+
+	} else {
+		if (dx == 0) {
+			dx = dx_in_air;
+		}
 	}
 	
 	//coyote
@@ -46,18 +50,14 @@ if (dy > 0) { // down
 	if (t1 != 0 || t2 != 0) {
 		y = ((bbox_top + 32) & ~31) - sprite_bbox_top;
 		v_speed = 0;
+		dx_in_air = 0;
+		
+	} else {
+		if (dy != 0 && dx == 0) {
+			dx = dx_in_air;
+		}
 	}
 	
-	//coyote
-	/*if (dx != 0) {
-		prev_dx = dx;
-	} else if (prev_dx > 0) {
-		dx = max(prev_dx - 0.1, 0);
-		prev_dx = dx;
-	} else if (prev_dx < 0) {
-		dx = min(prev_dx + 0.1, 0);
-		prev_dx = dx;
-	}*/
 }
 
 // do horizontal movement
@@ -69,6 +69,7 @@ if (dx > 0) { // right
 	
 	if (t1 != 0 || t2 != 0) {
 		x = ((bbox_right & ~31) - 1) - sprite_bbox_right;
+		dx_in_air = 0;
 	}
 } else { // left 
 	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
@@ -76,12 +77,13 @@ if (dx > 0) { // right
 	
 	if (t1 != 0 || t2 != 0) {
 		x = ((bbox_left + 32) & ~31) - sprite_bbox_left;
+		dx_in_air = 0;
 	}
 }
 
 // shoot - enables the alarm for laser hitbox's fire rate
 dir = point_direction(x, y, mouse_x, mouse_y); // update dir first, used both in step and draw
-if (mouse_check_button(mb_left)) {
+if (mouse_check_button(mb_left) && global.hasGun == true) {
 	if alarm[0] = -1 {
 		alarm[0] = room_speed/fire_rate;
 //		with (instance_create_layer(x+gunOffsetX, y+gunOffsetY, "Instances", obj_laser_hit)) {
