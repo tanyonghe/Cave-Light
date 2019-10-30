@@ -28,6 +28,10 @@ if (dy > 0) { // down
 
 	} else {
 		if (dx == 0) {
+			dx_in_air = dx_in_air * 0.96;
+			if (abs(dx_in_air) < 0.1) {
+				dx_in_air = 0;
+			}
 			dx = dx_in_air;
 		} else {
 			dx_in_air = dx;
@@ -45,10 +49,16 @@ if (dy > 0) { // down
 		
 	} else if (dy != 0) {
 		if (dx == 0) {
+			dx_in_air = dx_in_air * 0.96;
+			if (abs(dx_in_air) < 0.1) {
+				dx_in_air = 0;
+			}
 			dx = dx_in_air;
 		} else {
 			dx_in_air = dx;
 		}
+	} else if (dy == 0) {
+		dx_in_air = 0;
 	}
 	
 }

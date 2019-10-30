@@ -13,6 +13,4 @@ if (lives > 0) {
 		v_speed = 0;
 	}
 	global.game_over = true;
-	//instance_create_layer(0, 0, "Instructions", obj_game_over);
-	//instance_create_layer(0, 0, "Instructions", obj_game_over_text);
 }
