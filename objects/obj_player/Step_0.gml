@@ -29,19 +29,10 @@ if (dy > 0) { // down
 	} else {
 		if (dx == 0) {
 			dx = dx_in_air;
+		} else {
+			dx_in_air = dx;
 		}
 	}
-	
-	//coyote
-	/*if (dx != 0) {
-		prev_dx = dx;
-	} else if (prev_dx > 0) {
-		dx = max(prev_dx - 0.1, 0);
-		prev_dx = dx;
-	} else if (prev_dx < 0) {
-		dx = min(prev_dx + 0.1, 0);
-		prev_dx = dx;
-	}*/
 	
 } else { // up 
 	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
@@ -52,9 +43,11 @@ if (dy > 0) { // down
 		v_speed = 0;
 		dx_in_air = 0;
 		
-	} else {
-		if (dy != 0 && dx == 0) {
+	} else if (dy != 0) {
+		if (dx == 0) {
 			dx = dx_in_air;
+		} else {
+			dx_in_air = dx;
 		}
 	}
 	
