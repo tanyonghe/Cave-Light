@@ -1,0 +1,1 @@
+instructionSprite = spr_instruction_move;

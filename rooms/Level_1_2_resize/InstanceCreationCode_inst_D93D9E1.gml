@@ -1,1 +1,0 @@
-linked_door = instance_create_layer(1568, 986, "Instances", obj_door_generic);

@@ -3,4 +3,5 @@
 
 if (instance_exists(linked_door)) {
 	linked_door.destroyed = true;
+	image_index = 1;
 }

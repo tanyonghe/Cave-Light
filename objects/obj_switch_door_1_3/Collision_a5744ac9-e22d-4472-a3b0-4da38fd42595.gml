@@ -3,4 +3,5 @@
 
 if (instance_exists(obj_door_1_3)) {
 	obj_door_1_3.destroyed = true;
+	image_index = 1;
 }

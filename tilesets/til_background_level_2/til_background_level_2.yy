@@ -4,7 +4,31 @@
     "mvc": "1.11",
     "name": "til_background_level_2",
     "auto_tile_sets": [
-        
+        {
+            "id": "9435fe59-a022-40db-9f88-bb8b5bfe8418",
+            "modelName": "GMAutoTileSet",
+            "mvc": "1.0",
+            "closed_edge": false,
+            "name": "autotile_1",
+            "tiles": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        }
     ],
     "macroPageTiles": {
         "SerialiseData": null,
