@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "d3c05398-068c-4739-8448-076e07ef91db",
+            "Value": {
+                "id": "b06628e2-9884-48e8-8649-7d5cdd9b140f",
+                "resourcePath": "scripts\\set_tilemap_within_bbox\\set_tilemap_within_bbox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d4c17760-8675-408a-9da5-e33834e487cb",
             "Value": {
                 "id": "0dc2b90a-1758-4d92-b3c1-c491978059ad",
@@ -1206,7 +1214,8 @@
         "c89bb65d-412b-4b91-ab22-5de87be66bdb",
         "ffdb3028-ac05-4500-951b-a22439421e62",
         "7b383b49-28a7-42d8-af3f-17060f5b9705",
-        "c8882fca-dc62-4b71-a893-58941fcbf9dc"
+        "c8882fca-dc62-4b71-a893-58941fcbf9dc",
+        "d3c05398-068c-4739-8448-076e07ef91db"
     ],
     "tutorial": ""
 }
