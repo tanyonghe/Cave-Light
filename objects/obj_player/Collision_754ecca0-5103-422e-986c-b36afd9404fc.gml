@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (invuln) {
+	return;
+}
+
 lives = max(lives - 1, 0);
 
 if (lives > 0) {

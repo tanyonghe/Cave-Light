@@ -2,18 +2,8 @@
     "id": "e3b3048f-d76c-40b2-8361-bb40d38795d7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_switch_generic",
+    "name": "obj_switch_once",
     "eventList": [
-        {
-            "id": "159f8c65-8d1d-462d-8b26-8db5de374cb5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "e4aa6006-c483-4fb4-87ec-f917793ec689",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "e3b3048f-d76c-40b2-8361-bb40d38795d7"
-        },
         {
             "id": "0dbffe66-2783-4a42-9fa4-a6f17c57ff7d",
             "modelName": "GMEvent",

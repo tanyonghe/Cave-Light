@@ -1,0 +1,1 @@
+show_debug_message("left: " + string(bbox_left) + " right: " + string(bbox_right) + " top: " + string(bbox_top) + " bottom: " + string(bbox_bottom))

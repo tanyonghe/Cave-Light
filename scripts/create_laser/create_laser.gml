@@ -4,7 +4,7 @@
 /// @param reflects
 //creates a laser
 
-show_debug_message("===============   START create_laser   ================");
+//show_debug_message("===============   START create_laser   ================");
 
 var stepSize, length 
 length = 3000; // max distance to check (should be greater than any actual line of sight)
@@ -14,7 +14,7 @@ width = argument1;
 reflects = argument2; //how many more times the beam can reflect
 
 if reflects <= 0 {
-	show_debug_message(" >>> laser used up reflects");
+	//show_debug_message(" >>> laser used up reflects");
 	return;
 }
 
@@ -39,9 +39,9 @@ endY2 = yy + lengthdir_y(laser_length + stepSize, dir);
 draw_laser(xx, yy, endX, endY, width, type);
 
 // while LMB is pressed, player's alarm[0] constantly cycles. once it hits a set value (here, 1) the laser hitbox fires
-show_debug_message("-- obj_player.alarm[0] = " + string(obj_player.alarm[0]));
+//show_debug_message("-- obj_player.alarm[0] = " + string(obj_player.alarm[0]));
 if obj_player.alarm[0] == 1 {
-	show_debug_message("create new laserHitbox, type: " + string(type));
+	//("create new laserHitbox, type: " + string(type));
 	hitboxInst = instance_create_layer(xx, yy, "Instances", obj_laser_hit);
 	hitboxInst.image_angle = dir;
 	hitboxInst.image_xscale = laser_length + 4; // add a bit in case laser stops before obj
@@ -70,7 +70,7 @@ if collision_point(endX,endY,obj_mirror,0,1) || collision_point(endX2,endY2,obj_
 		create_laser(beamType, other.width, reflects); //retain current beam type
 	}
 	
-	show_debug_message("===============   end create_laser   ================");
+	//show_debug_message("===============   end create_laser   ================");
 	return;
 }
 
@@ -88,8 +88,8 @@ if collision_point(endX,endY,obj_crystal_ice,0,1) || collision_point(endX2,endY2
 		create_laser(beamTypes.frost, other.width, reflects); //change beam type to frost
 	}
 	
-	show_debug_message("===============   end create_laser   ================");
+	//show_debug_message("===============   end create_laser   ================");
 	return;
 }
 
-show_debug_message("===============   end create_laser   ================");
+//show_debug_message("===============   end create_laser   ================");
