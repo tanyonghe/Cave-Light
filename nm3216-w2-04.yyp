@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "598e15ce-1e06-4a90-a815-3d4401319ff6",
+            "Value": {
+                "id": "a95fdb4f-0dcb-4548-be70-c74313a758f3",
+                "resourcePath": "objects\\obj_switch_toggle\\obj_switch_toggle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "59ee9943-9d60-481a-bb56-5c008aedc75f",
             "Value": {
                 "id": "bbd947a2-2316-40e2-a55f-c26ffe10857b",

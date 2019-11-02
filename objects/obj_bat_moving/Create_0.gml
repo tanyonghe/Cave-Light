@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (displacement >= maxDisplacement) {
-	motion = 2;
-} else {
-	motion = 1;
-}
+
+// Inherit the parent event
+event_inherited();
+displayExclamation = false;
+
