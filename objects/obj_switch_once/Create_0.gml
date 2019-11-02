@@ -8,3 +8,4 @@ linked_inst = -1;
 action = "open" //default;
 
 used = false;
+reusable = false;

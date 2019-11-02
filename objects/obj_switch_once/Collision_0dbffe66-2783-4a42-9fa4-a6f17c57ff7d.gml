@@ -1,6 +1,6 @@
 /// @description Open/activate entity
 
-if (used) { // can only activate once
+if (used && !reusable) { // can only activate once
 	return;
 }
 

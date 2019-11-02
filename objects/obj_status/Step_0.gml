@@ -17,6 +17,19 @@ if (keyboard_check_pressed(vk_escape)) {
 	}
 }
 
+if (!cooldown) {
+	if (keyboard_check(vk_pageup) && room_exists(room_next(room))) {
+		room_goto_next();
+		cooldown = true;
+		alarm[0] = 30;
+	} else if (keyboard_check(vk_pagedown) && room_exists(room_previous(room))) {
+		room_goto_previous();
+		cooldown = true;
+		alarm[0] = 30;
+	}
+	
+}
+
 if (global.game_over == true && game_over_render == false) {
 	game_over_render = true;
 	instance_create_layer(0, 0, "Instructions", obj_game_over);

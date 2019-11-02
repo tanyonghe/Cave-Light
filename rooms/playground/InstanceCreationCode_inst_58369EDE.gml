@@ -1,0 +1,1 @@
+linked_inst = door2;

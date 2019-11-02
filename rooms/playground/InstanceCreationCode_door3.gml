@@ -1,0 +1,1 @@
+required_switches = 3;
