@@ -1,0 +1,1 @@
+linked_inst = doormulti_1_2b_a;

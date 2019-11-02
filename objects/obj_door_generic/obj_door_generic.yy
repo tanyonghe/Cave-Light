@@ -5,16 +5,6 @@
     "name": "obj_door_generic",
     "eventList": [
         {
-            "id": "3e1a0dbb-0d9e-4431-94a7-a345df90cae8",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "c8f271d1-dc04-440b-8f29-bf5d2b8691c6"
-        },
-        {
             "id": "020389d0-0860-4190-aae7-38d64cda0366",
             "modelName": "GMEvent",
             "mvc": "1.0",

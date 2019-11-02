@@ -1,4 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-opened = false;
+/// @description
+
+opened = false; // to override initial state, put "opened = true; image_alpha = 0.2" in creation code
 collision_map = layer_tilemap_get_id(layer_get_id("Collision_Map"));

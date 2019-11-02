@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description
 
 // basic move vars
 move_speed = 3;

@@ -1,8 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Open/activate entity
 
-if (instance_exists(door_inst)) {
-	with (door_inst) {
+if (used) { // can only activate once
+	return;
+}
+
+if (instance_exists(linked_inst)) {
+	with (linked_inst) {
 		if (other.action == "open") {
 			event_user(0);
 		} else {  //close
@@ -10,4 +13,5 @@ if (instance_exists(door_inst)) {
 		}
 	}
 	image_index = 1;
+	used = true;
 }

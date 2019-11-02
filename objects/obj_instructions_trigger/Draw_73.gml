@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description if triggered show img
 // You can write your code in this editor
 
 if (triggered) {
