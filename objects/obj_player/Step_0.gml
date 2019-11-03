@@ -9,7 +9,7 @@ v_speed += grav;
 var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
 var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
 if (t1 != 0 || t2 != 0) {
-	if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
+	if (keyboard_check(vk_space)) {
 		v_speed = -jump_impulse;
 		dx_in_air = dx;
 	}
@@ -100,15 +100,22 @@ if (mouse_check_button(mb_left) && global.hasGun == true) {
 
 // platform
 y -= dy;
-if (dy >= 0 && place_meeting(x, y + 1, obj_platform) && y < obj_platform.y - obj_platform.sprite_height/2) {
+var platform = instance_nearest(x, y, obj_platform);
+if (dy >= 0 && place_meeting(x, y - 5, platform)) {
+	if (x_diff_set == false || dx != 0) {
+		x_diff = platform.x - x;
+		x_diff_set = true;
+	}
 	if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
 		v_speed = -jump_impulse;
 	} else {
 		v_speed = 0;
-		y = obj_platform.y - obj_platform.sprite_height - 1;
+		y = platform.y - sprite_get_height(spr_player)/2 - 6;
+		x = platform.x - x_diff;
 	}
 } else {
 	y += dy;
+	x_diff_set = false;
 }
 
 cooldown = max(0, cooldown - 1);

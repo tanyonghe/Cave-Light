@@ -5,12 +5,19 @@ pause = false;
 
 invuln = true;
 
+if (global.checkpointR == room) {
+	x = global.checkpointX;
+	y = global.checkpointY;
+}
+
 // basic move vars
 move_speed = 6;
 jump_impulse = 14;
 grav = 0.75;
 v_speed = 0;
 dx_in_air = 0;
+x_diff = 0;
+x_diff_set = false;
 
 // shooting vars
 cooldown = 0;

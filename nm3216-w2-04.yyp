@@ -111,14 +111,6 @@
             }
         },
         {
-            "Key": "19492a39-68e8-478f-81b5-58a318579df3",
-            "Value": {
-                "id": "2e63f1fb-54de-4a24-81c1-0bc93c5f21b9",
-                "resourcePath": "objects\\obj_instructions_prompt_2\\obj_instructions_prompt_2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1b61eeea-7e30-4fdd-a389-b9264931466f",
             "Value": {
                 "id": "dcefc8ed-d67f-4dc0-9828-fbf472f88da7",
@@ -139,14 +131,6 @@
             "Value": {
                 "id": "eb92281d-cf8d-4967-8987-63fdb56b9c93",
                 "resourcePath": "objects\\obj_crystal_ice\\obj_crystal_ice.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "212c99c2-a79c-4a31-9503-f5085dcb5e4f",
-            "Value": {
-                "id": "3285a2a6-7f54-4940-bf6c-36f72d392cc8",
-                "resourcePath": "objects\\obj_instructions\\obj_instructions.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -271,14 +255,6 @@
             }
         },
         {
-            "Key": "3e461211-42cf-4462-9f1c-3d1cf45e4f73",
-            "Value": {
-                "id": "3a4f45f6-5b83-4bb9-a3d1-af4912f876eb",
-                "resourcePath": "views\\3e461211-42cf-4462-9f1c-3d1cf45e4f73.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "3f4bc563-91da-48c6-8302-4a45c3c33442",
             "Value": {
                 "id": "ee22b0d8-eed0-40e0-a890-9daa3f6bc8e1",
@@ -316,14 +292,6 @@
                 "id": "92aa55f8-24a6-459f-8f1c-37c977ff2e33",
                 "resourcePath": "views\\49e3568b-66c7-461f-9363-2b1f08822e52.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "4d908ba7-ff25-47e1-ac46-187de73e1424",
-            "Value": {
-                "id": "eaa28755-842f-4b05-b98b-ec784b7490d7",
-                "resourcePath": "objects\\obj_instructions_prompt\\obj_instructions_prompt.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -435,6 +403,14 @@
             "Value": {
                 "id": "08b2b7f8-b21a-415b-ae19-0744a5c6c90f",
                 "resourcePath": "objects\\obj_info_icon\\obj_info_icon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6a5d47cd-0438-42e1-a0d0-b9c91bf7e08b",
+            "Value": {
+                "id": "c9d0a53c-612f-4b59-94ae-186c5bcaaf2c",
+                "resourcePath": "objects\\obj_checkpoint\\obj_checkpoint.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -1,5 +1,5 @@
 dir = "x";
 dx = 2;
-motion = 0;
-continuous = 0;
+motion = 1;
+continuous = 1;
 maxDisplacement = 384;
