@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "6dcc13a5-b451-4025-a858-7f044911f602",
+            "Value": {
+                "id": "19f293c1-c621-4257-bc1e-d4fdea2bdec0",
+                "resourcePath": "objects\\obj_platform_onedir\\obj_platform_onedir.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6ebafb6f-919a-4941-82e6-6d6d98c68630",
             "Value": {
                 "id": "94a13def-780e-4882-832c-fd35ca171766",
@@ -719,6 +727,14 @@
             }
         },
         {
+            "Key": "acce1bb2-8d89-4795-89d0-6b8ea5188e02",
+            "Value": {
+                "id": "a48bb137-38e0-452c-8b70-49c2c6830d65",
+                "resourcePath": "scripts\\set_tilemap_within_area\\set_tilemap_within_area.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ad80e737-3c6f-4a90-9e26-68585cbf3e0e",
             "Value": {
                 "id": "b982068f-b159-402c-98af-039c3a14ecaa",
@@ -916,6 +932,14 @@
                 "id": "6d0caf3e-bda8-4a15-bcaf-c83060c96e87",
                 "resourcePath": "tilesets\\til_collision\\til_collision.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "cc2e3325-0b75-4a0c-a2a1-391dd7e645b7",
+            "Value": {
+                "id": "3f950125-bb4f-41e9-83ae-9635bef5197f",
+                "resourcePath": "objects\\obj_popup_text\\obj_popup_text.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1207,6 +1231,7 @@
         "ffdb3028-ac05-4500-951b-a22439421e62",
         "7b383b49-28a7-42d8-af3f-17060f5b9705",
         "c8882fca-dc62-4b71-a893-58941fcbf9dc",
+        "acce1bb2-8d89-4795-89d0-6b8ea5188e02",
         "d3c05398-068c-4739-8448-076e07ef91db"
     ],
     "tutorial": ""

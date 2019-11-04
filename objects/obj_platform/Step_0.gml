@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (!should_move) {
+	return;
+}
+
 if (motion == 1) {
 	
 	if (dir = "y") { // up
@@ -17,6 +21,7 @@ if (motion == 1) {
 } 
 
 else if (motion == 2) {
+	
 	if (displacement > 0) {
 		if (dir = "y") { // down
 			y += dy;
@@ -33,4 +38,3 @@ else if (motion == 2) {
 		}
 	}
 }
-

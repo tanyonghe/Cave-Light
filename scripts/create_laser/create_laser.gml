@@ -71,7 +71,7 @@ if collision_point(endX,endY,obj_mirror,0,1) || collision_point(endX2,endY2,obj_
 	}
 	
 	//show_debug_message("===============   end create_laser   ================");
-	return;
+	return; // TODO should it return? what if objects overlap?
 }
 
 // laser colliding with ice crystal

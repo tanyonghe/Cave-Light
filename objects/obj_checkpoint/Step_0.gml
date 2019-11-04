@@ -6,4 +6,5 @@ if (place_meeting(x, y, obj_player)) {
 	global.checkpointX = x;
 	global.checkpointY = y;
 	global.checkpointR = room;
+	instance_destroy();
 }

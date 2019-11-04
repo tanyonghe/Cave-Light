@@ -12,5 +12,5 @@ continuous = false;
 
 should_move = true; // interface for switches; move by default
 //NOTE if this platform is switch activated,
-//should_move makes it move back and forth along its route,
-//and should_move = false just makes it stop
+//should_move makes it forwards,
+//should_move = false makes it move backwards
