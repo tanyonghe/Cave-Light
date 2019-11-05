@@ -102,7 +102,7 @@ if (mouse_check_button(mb_left) && global.hasGun == true) {
 // platform
 y -= dy;
 var platform = instance_nearest(x, y, obj_platform);
-if (dy >= 0 && place_meeting(x, y - 5, platform)) {
+if (dy >= 0 && place_meeting(x, y + 1, platform) && y <= platform.y - sprite_get_height(spr_player)/2) {
 	if (x_diff_set == false || dx != 0) {
 		x_diff = platform.x - x;
 		x_diff_set = true;
@@ -111,7 +111,7 @@ if (dy >= 0 && place_meeting(x, y - 5, platform)) {
 		v_speed = -jump_impulse;
 	} else {
 		v_speed = 0;
-		y = platform.y - sprite_get_height(spr_player)/2 - 6;
+		y = platform.y - sprite_get_height(spr_player)/2 - 12;
 		x = platform.x - x_diff;
 	}
 } else {
