@@ -1,1 +1,1 @@
-linked_inst = door_1_3_b
+linked_inst = door_1_3_b;

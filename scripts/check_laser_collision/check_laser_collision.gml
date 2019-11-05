@@ -7,7 +7,7 @@ currY = argument[1];
 //TODO make this global and initialize only once
 var array; // everything a laser should collide with
 array[0] = obj_crystal_ice; 
-array[1] = obj_crystal_ice;
+array[1] = obj_crystal_ice; // TODO obj_ice deprecated
 array[2] = obj_platform;
 array[3] = obj_enemy;
 array[4] = obj_bat_resting;

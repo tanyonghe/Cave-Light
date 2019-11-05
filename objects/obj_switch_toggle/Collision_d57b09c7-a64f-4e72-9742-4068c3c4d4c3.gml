@@ -1,5 +1,7 @@
 /// @description
 
+alarm[0] = 10; // must be greater than laser hit interval
+
 if (!canToggle) { // an interval before it can be toggled
 	exit;
 }
@@ -14,7 +16,6 @@ if (instance_exists(linked_inst)) {
 	}
 	image_index = (image_index+1)%2; // toggles between 0 and 1
 	canToggle = false;
-	alarm[0] = 20; // must be greater than laser hit interval
 	action = !action; //invert
 	
 }
