@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "18da2257-2643-4483-8c5b-68ccfc6f6a9b",
+            "Value": {
+                "id": "a889828b-831d-4edf-aba9-e523dd0ffe7f",
+                "resourcePath": "sprites\\spr_crystal_surge\\spr_crystal_surge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "191c7238-51fc-41ab-aac6-5a4556bb4d99",
             "Value": {
                 "id": "3e9ee4d9-ba6b-483b-8a89-a190b52f5527",
@@ -139,6 +147,14 @@
             "Value": {
                 "id": "eb92281d-cf8d-4967-8987-63fdb56b9c93",
                 "resourcePath": "objects\\obj_crystal_ice\\obj_crystal_ice.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "205bc3bd-4c77-474f-8589-b8373f9343a8",
+            "Value": {
+                "id": "f45a3557-c96b-4efe-95f7-02466863f795",
+                "resourcePath": "objects\\obj_crystal_surge\\obj_crystal_surge.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1199,26 +1215,10 @@
             }
         },
         {
-            "Key": "e4aa6006-c483-4fb4-87ec-f917793ec689",
-            "Value": {
-                "id": "b0ea49ec-9476-4b5a-86f2-463fe71c5d3c",
-                "resourcePath": "objects\\obj_bullet\\obj_bullet.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "e925ab25-dd2d-42b8-bdc3-62d1c89680cc",
             "Value": {
                 "id": "ada8f5f3-be08-46c1-b57f-b3f9eb337521",
                 "resourcePath": "objects\\obj_water\\obj_water.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "edb5362a-88e9-4315-b26c-edb65d0f8fcd",
-            "Value": {
-                "id": "35d47ebf-ad0c-4d36-8803-dad296957146",
-                "resourcePath": "objects\\obj_bullet_ice\\obj_bullet_ice.yy",
                 "resourceType": "GMObject"
             }
         },

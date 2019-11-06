@@ -9,7 +9,7 @@
 
 var stepSize, length 
 length = 3000; // max distance to check (should be greater than any actual line of sight)
-stepSize = 5; // collision is checked every stepSize. smaller stepsize, better precision, worse performance
+stepSize = 4; // collision is checked every stepSize. smaller stepsize, better precision, worse performance
 type = argument0;
 width = argument1;
 reflects = argument2; //how many more times the beam can reflect]
@@ -19,9 +19,6 @@ if reflects <= 0 {
 	//show_debug_message(" >>> laser used up reflects");
 	return;
 }
-
-draw_set_color(c_red);
-draw_set_alpha(1);
 
 laser_length = 0; // actual distance of this segment of the beam
 
@@ -37,27 +34,27 @@ endX2 = xx + lengthdir_x(laser_length + stepSize*2, firingDir); //might stop bef
 endY2 = yy + lengthdir_y(laser_length + stepSize*2, firingDir);
 
 //show_debug_message("DRAW_LASER(" + string(xx) + "," + string(yy) + "," + string(endX) + "," + string(endY) + ")")
-
+//show_debug_message("draw_laser type " + string(type) + ", alpha " + string(alpha_multiplier));
 draw_laser(xx, yy, endX, endY, width, type, alpha_multiplier);
 
 // while LMB is pressed, player's alarm[0] constantly cycles. once it hits a set value (here, 1) the laser hitbox fires
 //show_debug_message("-- obj_player.alarm[0] = " + string(obj_player.alarm[0]));
 if obj_player.alarm[0] == 1 {
-	//("create new laserHitbox, type: " + string(type));
 	hitboxInst = instance_create_layer(xx, yy, "Instances", obj_laser_hit);
 	hitboxInst.image_angle = firingDir;
 	hitboxInst.image_xscale = laser_length + 4; // add a bit in case laser stops before obj
 	hitboxInst.image_yscale = width;
 	hitboxInst.hitboxBeamType = type;
+	//show_debug_message("new laser hitbox type " + string(type));
 	
-	switch(type) {
+	switch(hitboxInst.hitboxBeamType) {
 		case beamTypes.normal:
 			break;
 		case beamTypes.frost:
-			hitboxInst.image_blend = make_color_rgb(199, 250, 255);
+			hitboxInst.image_blend = make_color_rgb(0, 17, 255);
 			break;
 		case beamTypes.surge:
-			hitboxInst.image_blend = make_color_rgb(187, 176, 255);
+			hitboxInst.image_blend = make_color_rgb(255, 0, 255);
 			break;
 		case beamTypes.amplified:
 		case beamTypes.amplifiedFrost:
@@ -84,7 +81,7 @@ if collision_point(endX,endY,obj_mirror,0,1) || collision_point(endX2,endY2,obj_
 	inst.beamType = type;
 	with inst {
 		//if (keyboard_check(vk_control)) { //debugging
-			show_debug_message("reflection: create_laser(normal, " + string(reflects) + " reflects), firingDir: " + string(firingDir));
+			show_debug_message("REFLECTED: create_laser(type " + string(beamType) + ", " + string(reflects) + " reflects), firingDir: " + string(firingDir));
 			create_laser(beamType, other.width, reflects, 0.8*other.alpha_multiplier); //retain current beam type
 		//}
 	}
@@ -103,8 +100,26 @@ if collision_point(endX,endY,obj_crystal_ice,0,1) || collision_point(endX2,endY2
     //inst.dis = length-laser_length; // remaining length left to project the laser (must decrement else will infinitely reflect)
     inst.reflects = reflects;
 	with inst {
-		//show_debug_message("create_laser(frost, " + string(reflects) + " reflects)");
+		show_debug_message("CONVERTED: create_laser(frost, " + string(reflects) + " reflects)");
 		create_laser(beamTypes.frost, other.width, reflects, 1); //change beam type to frost
+	}
+	
+	//show_debug_message("===============   end create_laser   ================");
+	return;
+}
+
+// laser colliding with ice crystal
+if collision_point(endX,endY,obj_crystal_surge,0,1) || collision_point(endX2,endY2,obj_crystal_surge,0,1) {
+	//show_debug_message("COLLIDED WITH ICE CRYSTAL")
+    inst = instance_nearest(endX,endY,obj_crystal_surge)
+    inst.xx = endX
+    inst.yy = endY
+    inst.firingDir = firingDir
+    //inst.dis = length-laser_length; // remaining length left to project the laser (must decrement else will infinitely reflect)
+    inst.reflects = reflects;
+	with inst {
+		show_debug_message("CONVERTED: create_laser(surge, " + string(reflects) + " reflects)");
+		create_laser(beamTypes.surge, other.width, reflects, 1); //change beam type to surge
 	}
 	
 	//show_debug_message("===============   end create_laser   ================");

@@ -7,7 +7,7 @@ currY = argument[1];
 //TODO make this global and initialize only once
 var array; // everything a laser should collide with
 array[0] = obj_crystal_ice; 
-array[1] = obj_crystal_ice; // TODO obj_ice deprecated
+array[1] = obj_crystal_surge; // TODO obj_ice deprecated
 array[2] = obj_platform;
 array[3] = obj_enemy;
 array[4] = obj_bat_resting;
@@ -26,7 +26,7 @@ array[7] = obj_mirror;
 var collision_map_layer_id = layer_get_id("Collision_Map");
 var map_id = layer_tilemap_get_id(collision_map_layer_id);
 if tilemap_get_at_pixel(map_id, currX, currY) {
-	show_debug_message(">> COLLIDED WITH CollisionMap");
+	//show_debug_message(">> COLLIDED WITH CollisionMap");
 	return true;
 }
 
@@ -34,7 +34,7 @@ var hasCollided = false;
 
 for (var i = 0; i < 8; i++) {
 	if collision_point(currX, currY, array[i], 1, 1) {
-		show_debug_message(">> COLLIDED WITH " + object_get_name(array[i]));
+		//show_debug_message(">> COLLIDED WITH " + object_get_name(array[i]));
 		hasCollided = true;
 		break;
 	}
