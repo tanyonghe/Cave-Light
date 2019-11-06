@@ -1,29 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (should_move) {
-	
-	if (displacement < maxDisplacement) { // not yet at max
-		if (dir = "y") { // up
-			y -= dy;
-			displacement += dy;
-		} else { // left
-			x -= dx;
-			displacement += dx;
-		}
-	}
-} 
-
-else {
-
-	if (displacement > 0) { // not yet at min
-		if (dir = "y") { // down
-			y += dy;
-			displacement -= dy;
-		} else { // right
-			x += dx;
-			displacement -= dx;
-		}
-	}
-
+if (!inverse) {
+	event_user(2);
+} else {
+	event_user(3);
 }

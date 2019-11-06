@@ -1,13 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.initialW = 1280;
+global.initialH = 768;
 
-pause = false;
+global.finalW = global.initialW * 1.5;
+global.finalH = global.initialH * 1.5;
+
 global.playerControlsEnabled = true;
+pause = false;
 invuln = false;
 
 if (global.checkpointR == room) {
 	x = global.checkpointX;
 	y = global.checkpointY;
+	camera_set_view_size(view_camera[0], global.cameraW, global.cameraH);
 }
 
 // basic move vars

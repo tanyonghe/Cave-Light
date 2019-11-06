@@ -1,0 +1,2 @@
+/// @description accelerate
+vspeed += accel;

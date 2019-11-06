@@ -10,6 +10,10 @@ dy = 2;
 dx = 2;
 continuous = false;
 
+inverse = false; // default - on: up/left
+                 // inverse - on: down/right
+
+
 should_move = true; // interface for switches; move by default
 //NOTE if this platform is switch activated,
 //should_move makes it forwards,
