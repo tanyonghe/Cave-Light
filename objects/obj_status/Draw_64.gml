@@ -12,7 +12,7 @@ if (pause) {
 	draw_text((view_wport[0]-96)/2, (view_hport[0]-96)/2, "Paused");
 }
 */
-
+/* AHHHH
 if (pause) {
 	var cx = camera_get_view_x(view_camera[0]) + view_wport[0]/2;
 	var cy = camera_get_view_y(view_camera[0]) + view_hport[0]/2;
@@ -44,3 +44,4 @@ else {
 	instance_destroy(obj_menu_instructions);
 	instance_destroy(obj_menu_quit);
 }
+*/

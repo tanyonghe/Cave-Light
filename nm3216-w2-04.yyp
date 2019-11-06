@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "39b3c7cd-b2b0-48b7-96b0-4e9f7f307e31",
+            "Value": {
+                "id": "1b3a4de6-a5dd-4fef-aeae-614959daffbc",
+                "resourcePath": "objects\\obj_main_menu_controller\\obj_main_menu_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3d784aa0-ccfe-49a8-92a8-6e7eb2d8eb69",
             "Value": {
                 "id": "a71a2167-7aeb-4f22-a971-27c13c6d93e0",
@@ -775,6 +783,14 @@
             }
         },
         {
+            "Key": "b8c485ba-3c99-4391-a8e2-c8c17c7a12f6",
+            "Value": {
+                "id": "69cd307d-f670-4d96-891d-10b9b52e74c7",
+                "resourcePath": "sprites\\spr_instructions\\spr_instructions.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b8df783d-35ba-455e-9e5f-247386fbaef6",
             "Value": {
                 "id": "7e3f0931-bea8-441c-a42b-422f627d4dad",
@@ -1156,6 +1172,14 @@
                 "id": "33e42fc3-0790-4a46-97f3-528e83a4badb",
                 "resourcePath": "sprites\\spr_stalactite_96x64\\spr_stalactite_96x64.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f21635b5-4a34-4881-89b2-26fbcd925771",
+            "Value": {
+                "id": "abff4e94-481c-47e1-840e-5d0c8d1a7f0b",
+                "resourcePath": "objects\\obj_pause_menu_controller\\obj_pause_menu_controller.yy",
+                "resourceType": "GMObject"
             }
         },
         {
