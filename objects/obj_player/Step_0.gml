@@ -1,7 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 var dx = move_speed * (keyboard_check(ord("D")) - keyboard_check(ord("A")));
+
+if (global.playerControlsEnabled) {
+	if (keyboard_check(ord("D"))) {
+		facing = 1;
+	} else if (keyboard_check(ord("A"))) {
+		facing = -1;
+	}
+} else {
+	dx = 0;
+}
 
 var dy = v_speed;
 v_speed += grav;
@@ -9,7 +20,8 @@ v_speed += grav;
 var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
 var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
 if (t1 != 0 || t2 != 0) {
-	if (keyboard_check(vk_space)) {
+	if (global.playerControlsEnabled && keyboard_check(vk_space)) {
+	//if (keyboard_check(vk_space)) {
 		v_speed = -jump_impulse;
 		dx_in_air = dx;
 	}
@@ -86,16 +98,19 @@ if (dx > 0) { // right
 }
 
 // shoot - enables the alarm for laser hitbox's fire rate
-dir = point_direction(x, y, mouse_x, mouse_y); // update dir first, used both in step and draw
-if (mouse_check_button(mb_left) && global.hasGun == true) {
+
+
+if (mouse_check_button(mb_left) && global.hasGun && global.playerControlsEnabled) {
+	dir = point_direction(x, y, mouse_x, mouse_y); // update dir first, used both in step and draw
+	if (dir<90 || dir > 270) { // change orientation based on shooting direction
+		facing = 1;
+	} else {
+		facing = -1;
+	}
+	firingDir = point_direction(x + gunOffsetX * facing, y, mouse_x, mouse_y); // account for offset
+
 	if alarm[0] = -1 {
 		alarm[0] = room_speed/fire_rate;
-//		with (instance_create_layer(x+gunOffsetX, y+gunOffsetY, "Instances", obj_laser_hit)) {
-//			image_angle = other.dir; 
-//			image_xscale = other.laser_length + 4; // add a bit in case laser stops before obj
-//			image_yscale = other.laser_width;
-//			hitboxBeamType = beamTypes.normal; // have to change if player picks up crystal
-//		}
 	}
 }
 
@@ -123,3 +138,7 @@ if (instance_exists(obj_platform)) {
 }
 
 cooldown = max(0, cooldown - 1);
+
+if (keyboard_check_pressed(vk_alt)) {
+	invuln = !invuln;
+}

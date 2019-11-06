@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 pause = false;
-
+global.playerControlsEnabled = true;
 invuln = false;
 
 if (global.checkpointR == room) {
@@ -18,10 +18,12 @@ v_speed = 0;
 dx_in_air = 0;
 x_diff = 0;
 x_diff_set = false;
+facing = 1; // 1 is right, -1 is left
 
 // shooting vars
 cooldown = 0;
 dir = 0; //aim
+firingDir = 0; //aim including offset
 fire_rate = 60; //times per second
 amplified_laser_damage = 5; //each time
 frost_laser_damage = 2;
@@ -30,7 +32,7 @@ reflects = 10; //max times laser can reflect
 laser_length = 0; //actual distance of beam
 laser_width = 4;
 // how far from the player to draw the laser
-gunOffsetX = 0;
+gunOffsetX = 20;
 gunOffsetY = 0;
 
 // tile map info

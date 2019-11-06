@@ -6,11 +6,14 @@
 
 inst = instance_nearest(x, y, obj_laser_hit)
 
-if (inst.hitboxBeamType == 1) {
+show_debug_message("~~~~ laser touching water, type " + string(inst.hitboxBeamType));
+
+if (inst.hitboxBeamType == beamTypes.frost) {
 	//instance_change(obj_ice, 1);
 	with (instance_create_layer(x, y, "Invisible_Instances", obj_mirror)) {
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
+		image_alpha = 0.5;
 	}
 	// make it solid
 	set_tilemap_within_bbox(layer_tilemap_get_id(layer_get_id("Collision_Map")), 1);

@@ -26,6 +26,7 @@ array[7] = obj_mirror;
 var collision_map_layer_id = layer_get_id("Collision_Map");
 var map_id = layer_tilemap_get_id(collision_map_layer_id);
 if tilemap_get_at_pixel(map_id, currX, currY) {
+	show_debug_message(">> COLLIDED WITH CollisionMap");
 	return true;
 }
 
