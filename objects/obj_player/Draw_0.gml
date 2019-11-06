@@ -1,6 +1,6 @@
 /// @description Draw laser and self
 
-if (mouse_check_button(mb_left) && global.hasGun == true) {
+if (mouse_check_button(mb_left) && global.hasGun && global.playerControlsEnabled) {
 	//show_debug_message(dir);
 	xx = x + gunOffsetX * facing;
 	yy = y + gunOffsetY;
@@ -9,7 +9,9 @@ if (mouse_check_button(mb_left) && global.hasGun == true) {
 }
 
 if (invuln) {
-	draw_text(x, y - 32, "invuln");
+	draw_text(x, y - 64, "invuln | " + string(fps));
 }
+
+image_xscale = facing;
 draw_self();
 

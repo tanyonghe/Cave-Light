@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 pause = false;
-
+global.playerControlsEnabled = true;
 invuln = false;
 
 if (global.checkpointR == room) {
