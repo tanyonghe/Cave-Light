@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
 var dx = move_speed * (keyboard_check(ord("D")) - keyboard_check(ord("A")));
 
 if (global.playerControlsEnabled) {
@@ -22,8 +21,16 @@ var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index
 if (t1 != 0 || t2 != 0) {
 	if (global.playerControlsEnabled && keyboard_check(vk_space)) {
 	//if (keyboard_check(vk_space)) {
+		if (!audio_is_playing(player_jump)) {
+			var snd = audio_play_sound(player_jump, 1, false); 
+			audio_sound_gain(snd, 10, 0);
+			audio_sound_set_track_position(snd, 0.2);
+			//audio_sound_pitch(sfx_jump, choose(0.2, 0.5, 1, 1.5, 2));
+		}
 		v_speed = -jump_impulse;
 		dx_in_air = dx;
+		footstep_counter = 0;
+		audio_stop_sound(player_footsteps);
 	}
 }
 
@@ -37,8 +44,29 @@ if (dy > 0) { // down
 		y = ((bbox_bottom & ~31) - 1) - sprite_bbox_bottom;
 		v_speed = 0;
 		dx_in_air = 0;
+		
+		if (in_air == true) {
+			in_air = false;
+			if (!audio_is_playing(player_thud)) {
+				var snd = audio_play_sound(player_thud, 1, false);
+				audio_sound_gain(snd, 10, 0);
+			}
+		}
+		
+		if (dx != 0 && (keyboard_check(ord("D")) || keyboard_check(ord("A")))) {
+			if (footstep_counter == 0) {
+				var snd = audio_play_sound(player_footsteps, 1, false);
+				audio_sound_set_track_position(snd, 7);
+			}
+			footstep_counter = (footstep_counter + 1) mod 20;
+		}
+		else {
+			footstep_counter = 0;
+			audio_stop_sound(player_footsteps);
+		}
 
 	} else {
+		in_air = true;
 		if (dx == 0) {
 			dx_in_air = dx_in_air * 0.96;
 			if (abs(dx_in_air) < 0.1) {

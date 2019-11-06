@@ -49,11 +49,19 @@ if obj_player.alarm[0] == 1 {
 	
 	switch(hitboxInst.hitboxBeamType) {
 		case beamTypes.normal:
+			var snd = audio_play_sound(player_lightbeam, 1, false);
+			audio_sound_gain(snd, 0.1, 0);
 			break;
 		case beamTypes.frost:
+			var snd = audio_play_sound(player_frostbeam, 1, false);
+			audio_sound_gain(snd, 0.4, 0);
+			audio_sound_set_track_position(snd, 7);
 			hitboxInst.image_blend = make_color_rgb(0, 17, 255);
 			break;
 		case beamTypes.surge:
+			var snd = audio_play_sound(player_surgebeam, 1, false);
+			audio_sound_gain(snd, 0.5, 0);
+			audio_sound_set_track_position(snd, 3.8);
 			hitboxInst.image_blend = make_color_rgb(255, 0, 255);
 			break;
 		case beamTypes.amplified:

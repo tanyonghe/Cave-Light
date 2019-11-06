@@ -19,6 +19,8 @@ dx_in_air = 0;
 x_diff = 0;
 x_diff_set = false;
 facing = 1; // 1 is right, -1 is left
+footstep_counter = 0;
+in_air = false;
 
 // shooting vars
 cooldown = 0;
