@@ -102,7 +102,8 @@ if (mouse_check_button(mb_left) && global.hasGun == true) {
 // platform
 y -= dy;
 var platform = instance_nearest(x, y, obj_platform);
-if (dy >= 0 && place_meeting(x, y + 1, platform) && y <= platform.y - sprite_get_height(spr_player)/2) {
+var on_platform = place_meeting(x, y + 1, platform) || (y <= platform.y - sprite_get_height(spr_player)/2 && y + dy > platform.y - sprite_get_height(spr_player)/2);
+if (dy >= 0 && on_platform && y <= platform.y - sprite_get_height(spr_player)/2) {
 	if (x_diff_set == false || dx != 0) {
 		x_diff = platform.x - x;
 		x_diff_set = true;
