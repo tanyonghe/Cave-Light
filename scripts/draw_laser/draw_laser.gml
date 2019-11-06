@@ -5,6 +5,7 @@
 /// @param y2
 /// @param w
 /// @param type
+/// @param alpha_multiplier
 //draws a laser (line) between two coords
 
 enum beamTypes {
@@ -22,6 +23,7 @@ x2 = argument2
 y2 = argument3
 ww = argument4
 type = argument5
+alpha_multiplier = argument6
 
 colour_normalbeam = make_colour_rgb(255, 237, 114);
 colour_frost = c_aqua;
@@ -46,16 +48,16 @@ switch(type) {
 
 //TODO can vary the lines for diff beamtypes to improve appearance
 gpu_set_blendmode(bm_normal);
-draw_set_alpha(0.2);
+draw_set_alpha(0.2*alpha_multiplier);
 draw_line_width(x1,y1,x2,y2,ww*2);
 draw_line_width(x1,y1,x2,y2,ww*1.75);
 draw_line_width(x1,y1,x2,y2,ww*1.5);
-draw_set_alpha(1);
+draw_set_alpha(1*alpha_multiplier);
 draw_line_width(x1,y1,x2,y2,ww);
-draw_set_alpha(0.2);
+draw_set_alpha(0.2*alpha_multiplier);
 draw_set_color(c_white);
 draw_line_width(x1,y1,x2,y2,ww*0.5);
-draw_set_alpha(0.5);
+draw_set_alpha(0.5*alpha_multiplier);
 draw_line_width(x1,y1,x2,y2,ww*0.3);
 draw_set_alpha(1);
 
