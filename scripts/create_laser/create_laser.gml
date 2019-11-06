@@ -56,7 +56,7 @@ if obj_player.alarm[0] == 1 {
 
 // laser colliding with mirror (ice surfaces should use invisible mirrors)
 if collision_point(endX,endY,obj_mirror,0,1) || collision_point(endX2,endY2,obj_mirror,0,1) {
-	show_debug_message("COLLIDED WITH MIRROR")
+	//show_debug_message("COLLIDED WITH MIRROR")
     inst = instance_nearest(endX,endY,obj_mirror)
     inst.xx = endX
     inst.yy = endY
@@ -66,7 +66,7 @@ if collision_point(endX,endY,obj_mirror,0,1) || collision_point(endX2,endY2,obj_
     inst.reflects = reflects - 1;
 	inst.beamType = type;
 	with inst {
-		show_debug_message("create_laser(normal, " + string(reflects) + " reflects)");
+		//show_debug_message("create_laser(normal, " + string(reflects) + " reflects)");
 		create_laser(beamType, other.width, reflects); //retain current beam type
 	}
 	
@@ -76,7 +76,7 @@ if collision_point(endX,endY,obj_mirror,0,1) || collision_point(endX2,endY2,obj_
 
 // laser colliding with ice crystal
 if collision_point(endX,endY,obj_crystal_ice,0,1) || collision_point(endX2,endY2,obj_crystal_ice,0,1) {
-	show_debug_message("COLLIDED WITH ICE CRYSTAL")
+	//show_debug_message("COLLIDED WITH ICE CRYSTAL")
     inst = instance_nearest(endX,endY,obj_crystal_ice)
     inst.xx = endX
     inst.yy = endY
@@ -84,7 +84,7 @@ if collision_point(endX,endY,obj_crystal_ice,0,1) || collision_point(endX2,endY2
     //inst.dis = length-laser_length; // remaining length left to project the laser (must decrement else will infinitely reflect)
     inst.reflects = reflects;
 	with inst {
-		show_debug_message("create_laser(frost, " + string(reflects) + " reflects)");
+		//show_debug_message("create_laser(frost, " + string(reflects) + " reflects)");
 		create_laser(beamTypes.frost, other.width, reflects); //change beam type to frost
 	}
 	

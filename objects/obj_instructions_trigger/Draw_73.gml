@@ -1,7 +1,7 @@
 /// @description if triggered show img
 // You can write your code in this editor
 
-if (triggered && global.hasGun) {
+if (triggered) {
 	// y is from bottom edge of obj
 	draw_sprite_ext(instructionSprite, inst_image_index, x, y - 120, inst_xscale, inst_yscale, 0, c_white, 1); 
 	

@@ -3,7 +3,7 @@
 
 pause = false;
 
-invuln = true;
+invuln = false;
 
 if (global.checkpointR == room) {
 	x = global.checkpointX;
@@ -22,10 +22,10 @@ x_diff_set = false;
 // shooting vars
 cooldown = 0;
 dir = 0; //aim
-fire_rate = 15; //times per second
-amplified_laser_damage = 10; //each time
-frost_laser_damage = 5;
-surge_laser_damage = 7;
+fire_rate = 60; //times per second
+amplified_laser_damage = 5; //each time
+frost_laser_damage = 2;
+surge_laser_damage = 4;
 reflects = 10; //max times laser can reflect
 laser_length = 0; //actual distance of beam
 laser_width = 4;

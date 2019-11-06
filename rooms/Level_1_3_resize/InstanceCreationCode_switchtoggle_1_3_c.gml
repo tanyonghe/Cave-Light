@@ -1,1 +1,0 @@
-linked_inst = door_1_3_c;

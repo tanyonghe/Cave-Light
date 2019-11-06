@@ -11,3 +11,6 @@ action = "open" //default;
 activated = false;
 
 image_blend = c_yellow; //temp
+
+// for multi doors: each switch connected to it has an index
+switch_index = -1; //default
