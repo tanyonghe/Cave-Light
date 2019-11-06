@@ -100,24 +100,26 @@ if (mouse_check_button(mb_left) && global.hasGun == true) {
 }
 
 // platform
-y -= dy;
-var platform = instance_nearest(x, y, obj_platform);
-var on_platform = place_meeting(x, y + 1, platform) || (y <= platform.y - sprite_get_height(spr_player)/2 && y + dy > platform.y - sprite_get_height(spr_player)/2) && abs(platform.x - x) < platform.sprite_width/2;
-if (dy >= 0 && on_platform && y <= platform.y - sprite_get_height(spr_player)/2) {
-	if (x_diff_set == false || dx != 0) {
-		x_diff = platform.x - x;
-		x_diff_set = true;
-	}
-	if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
-		v_speed = -jump_impulse;
+if (instance_exists(obj_platform)) {
+	y -= dy;
+	var platform = instance_nearest(x, y, obj_platform);
+	var on_platform = place_meeting(x, y + 1, platform) || (y <= platform.y - sprite_get_height(spr_player)/2 && y + dy > platform.y - sprite_get_height(spr_player)/2) && abs(platform.x - x) < platform.sprite_width/2;
+	if (dy >= 0 && on_platform && y <= platform.y - sprite_get_height(spr_player)/2) {
+		if (x_diff_set == false || dx != 0) {
+			x_diff = platform.x - x;
+			x_diff_set = true;
+		}
+		if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
+			v_speed = -jump_impulse;
+		} else {
+			v_speed = 0;
+			y = platform.y - sprite_get_height(spr_player)/2 - 12;
+			x = platform.x - x_diff;
+		}
 	} else {
-		v_speed = 0;
-		y = platform.y - sprite_get_height(spr_player)/2 - 12;
-		x = platform.x - x_diff;
+		y += dy;
+		x_diff_set = false;
 	}
-} else {
-	y += dy;
-	x_diff_set = false;
 }
 
 cooldown = max(0, cooldown - 1);

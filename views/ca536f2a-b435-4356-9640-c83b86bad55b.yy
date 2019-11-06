@@ -12,7 +12,10 @@
         "0528208c-fbd5-4fa6-b011-27c755aa7f2c",
         "cfc36df0-5a62-42c2-9043-006a862c17ac",
         "dc18d572-3a34-4862-8953-cfc268b6c948",
-        "fe6230ac-0fc1-45c1-8e4b-73bf4ebb4c30"
+        "fe6230ac-0fc1-45c1-8e4b-73bf4ebb4c30",
+        "b11ea677-81d4-4d67-bae8-e988bdfbfff9",
+        "736e6ade-f56f-4020-a9b9-61b992b1f86a",
+        "8fe71878-5483-428d-af7d-3ead284f7d98"
     ],
     "filterType": "GMSprite",
     "folderName": "menu_ui",

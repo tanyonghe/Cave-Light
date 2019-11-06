@@ -5,6 +5,10 @@ if (selected == 0) {
 	room_goto_next();
 }
 
+else if (selected == 1) {
+	select_level = 1;
+}
+
 else if (selected == 2) {
 	instructions = 1;
 }

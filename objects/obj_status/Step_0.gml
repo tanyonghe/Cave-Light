@@ -37,12 +37,6 @@ if (global.game_over == true && game_over_render == false) {
 	instance_create_layer(0, 0, "Instructions", obj_game_over_text);
 }
 
-/*
-if (pause) {
-	if point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),
-    155 - sprite_get_width(spr_menu_resume)/2, 35 - sprite_get_height(spr_menu_resume)/2,
-    155 + sprite_get_width(spr_menu_resume)/2, 35 + sprite_get_height(spr_menu_resume)/2) {
-		game_restart();
-	}
+else if (global.game_over != true && game_over_render == true) {
+	game_over_render = false;
 }
-*/
