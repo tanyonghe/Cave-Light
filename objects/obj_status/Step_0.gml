@@ -18,23 +18,22 @@ if (!instance_exists(obj_pause_menu_controller)) {
 	pause = false;
 }
 
-if (!cooldown) {
-	if (keyboard_check(vk_pageup) && room_exists(room_next(room))) {
-		room_goto_next();
-		cooldown = true;
-		alarm[0] = 30;
-	} else if (keyboard_check(vk_pagedown) && room_exists(room_previous(room))) {
-		room_goto_previous();
-		cooldown = true;
-		alarm[0] = 30;
-	}
+//if (!cooldown) {
+//	if (keyboard_check(vk_pageup) && room_exists(room_next(room))) {
+//		room_goto_next();
+//		cooldown = true;
+//		alarm[0] = 30;
+//	} else if (keyboard_check(vk_pagedown) && room_exists(room_previous(room))) {
+//		room_goto_previous();
+//		cooldown = true;
+//		alarm[0] = 30;
+//	}
 	
-}
+//}
 
 if (global.game_over == true && game_over_render == false) {
 	game_over_render = true;
-	instance_create_layer(0, 0, "Instructions", obj_game_over);
-	instance_create_layer(0, 0, "Instructions", obj_game_over_text);
+	alarm[0] = 30;
 }
 
 else if (global.game_over != true && game_over_render == true) {

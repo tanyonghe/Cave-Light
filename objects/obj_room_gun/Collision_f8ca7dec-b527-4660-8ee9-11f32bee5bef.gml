@@ -6,11 +6,14 @@ if (!triggered && keyboard_check(ord("W"))) {
 	show_debug_message("ALL GUNS BLAZING: Player found a gun!");
 	global.hasGun = true;
 	alarm[0] = 30;
+	
 	instance_create_layer(3072, 688, "Instances", obj_checkpoint);
-	with(instance_create_layer(2864, 896, "Instances", obj_instructions_trigger)) {
+	
+	info_icon_shoot.image_alpha = 0.8;
+	with(instance_create_layer(1360, 1024, "Instances", obj_instructions_trigger)) {
 		instructionSprite = spr_instruction_shoot;
 		inst_image_num = sprite_get_number(instructionSprite);
-		image_xscale = 0.25;
+		image_xscale = 0.5;
 		image_yscale = 0.625;
 	}
 }

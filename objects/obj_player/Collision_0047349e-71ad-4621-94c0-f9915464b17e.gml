@@ -5,9 +5,9 @@ if (invuln) {
 	return;
 }
 
-lives = max(lives - 1, 0);
+global.numOfLives = max(global.numOfLives - 1, 0);
 
-if (lives > 0) {
+if (global.numOfLives > 0) {
 	room_restart();
 } else {
 	with (all) {

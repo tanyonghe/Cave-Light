@@ -1,3 +1,5 @@
-/// @description Insert description here
+/// @description Show gameover
 // You can write your code in this editor
-cooldown = false;
+
+instance_create_layer(0, 0, "Instructions", obj_game_over);
+instance_create_layer(0, 0, "Instructions", obj_game_over_text);
