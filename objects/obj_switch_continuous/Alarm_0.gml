@@ -11,5 +11,12 @@ if (linked_inst.object_index == obj_door_multi) {
 		event_user(1); //call the "close" or equivalent event in the inst
 	}
 }
+
+with (linked_indicator) {
+	event_user(1); //red
+}
+with (linked_indicator2) {
+	event_user(1); //red
+}
 		
 image_index = 0;

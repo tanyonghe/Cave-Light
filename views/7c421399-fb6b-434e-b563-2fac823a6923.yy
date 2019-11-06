@@ -8,7 +8,8 @@
         "bb581fbe-d41a-4aca-94a3-ec7dd5d1c1d9",
         "e3b3048f-d76c-40b2-8361-bb40d38795d7",
         "c8f271d1-dc04-440b-8f29-bf5d2b8691c6",
-        "ef74711e-df12-422c-94d9-ecf28731397c"
+        "ef74711e-df12-422c-94d9-ecf28731397c",
+        "457d8675-731d-43e5-a795-a355158fd215"
     ],
     "filterType": "GMObject",
     "folderName": "doors and switches",

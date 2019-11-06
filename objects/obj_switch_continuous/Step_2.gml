@@ -16,6 +16,14 @@ if (instance_exists(linked_inst)) {
 				event_user(0);
 			}
 		}
+		
+		with (linked_indicator) {
+			event_user(0); //green
+		}
+		with (linked_indicator2) {
+			event_user(0); //green
+		}
+	
 		image_index = 1;
 		alarm[0] = 2; // TODO breaks for normal switch // as long as this switch is activated (from being shot at), the event won't run
 		//alarm countdown has to be greater than laser hitbox intervals

@@ -5,6 +5,8 @@
 
 image_speed = 0;
 linked_inst = -1;
+linked_indicator = -1;
+linked_indicator2 = -1;
 action = "open" //default;
 
 used = false;

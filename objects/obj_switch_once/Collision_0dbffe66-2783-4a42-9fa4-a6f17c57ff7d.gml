@@ -12,6 +12,24 @@ if (instance_exists(linked_inst)) {
 			event_user(1);
 		}
 	}
+	
+	with (linked_indicator) {
+		if (other.action == "open") {
+			event_user(0); //green
+		} else {
+			event_user(1); //red
+		}
+	}
+	
+	with (linked_indicator2) {
+		if (other.action == "open") {
+			event_user(0); //green
+		} else {
+			event_user(1); //red
+		}
+	}
+	
+	
 	image_index = 1;
 	used = true;
 }
