@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "2428924e-b6eb-4792-b1f0-d6b7fc8103a7",
+            "Value": {
+                "id": "044fe98b-1849-484b-b4b2-ea7afdab31cb",
+                "resourcePath": "objects\\obj_gun_pickup\\obj_gun_pickup.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "27800962-ec55-48b6-b255-6fb46c7f033b",
             "Value": {
                 "id": "553b3a17-bd92-46eb-8cb8-d3d476ec86ef",
@@ -1343,19 +1351,27 @@
             }
         },
         {
+            "Key": "e3d458fe-44e8-41b7-9457-fadd219d0853",
+            "Value": {
+                "id": "53369c60-ad19-49be-b223-4eed22c0a516",
+                "resourcePath": "objects\\obj_switch_waitforcomplete\\obj_switch_waitforcomplete.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e4c9a315-8e13-4ab0-a106-ea33194de26d",
             "Value": {
                 "id": "6da79435-b780-4ecc-b6fa-62e4e2ea3981",
                 "resourcePath": "sounds\\player_lightbeam\\player_lightbeam.yy",
                 "resourceType": "GMSound"
             }
-         },
-         {
-            "Key": "e3d458fe-44e8-41b7-9457-fadd219d0853",
+        },
+        {
+            "Key": "e713b057-5cdd-4be0-8107-6caea63143b6",
             "Value": {
-                "id": "53369c60-ad19-49be-b223-4eed22c0a516",
-                "resourcePath": "objects\\obj_switch_waitforcomplete\\obj_switch_waitforcomplete.yy",
-                "resourceType": "GMObject"
+                "id": "92bf64f0-3734-494b-b187-d67cea67f477",
+                "resourcePath": "sprites\\spr_gun\\spr_gun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
