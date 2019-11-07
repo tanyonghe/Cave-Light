@@ -80,6 +80,17 @@ if obj_player.alarm[0] == 1 {
 // laser colliding with mirror (ice surfaces should use invisible mirrors)
 if collision_point(endX,endY,obj_mirror,0,1) || collision_point(endX2,endY2,obj_mirror,0,1) {
     inst = instance_nearest(endX,endY,obj_mirror)
+	
+	// if surge beam, break it
+	show_debug_message("beamtype " + string(type) + " touched " + string(inst.mirror_type));
+	if (type == beamTypes.surge && inst.mirror_type == "ice") {
+		show_debug_message("SURGE BEAM TOUCHED ICE");
+		with (inst) {
+			event_user(0);
+			return;
+		}
+	}
+	
     inst.xx = endX
     inst.yy = endY
 	var reflectedDir = inst.v1 + (inst.v2 - firingDir)

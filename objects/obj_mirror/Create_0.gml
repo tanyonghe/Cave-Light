@@ -3,4 +3,4 @@
 
 v1 = image_angle + 90;
 v2 = image_angle + 270;
-type = "ore"; // or "ice"
+mirror_type = "ore"; // or "ice"

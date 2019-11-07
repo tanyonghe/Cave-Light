@@ -2,6 +2,6 @@
 // You can write your code in this editor
 triggered = true;
 if (shouldEnableControls) {
-	alarm[1] = 40;
+	alarm[1] = 30;
 	shouldEnableControls = false;
 }

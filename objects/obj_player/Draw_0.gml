@@ -13,5 +13,12 @@ if (invuln) {
 }
 
 image_xscale = facing;
+if (keyboard_check(ord("D")) && global.playerControlsEnabled) {
+		facing = 1;
+		if (!in_air) sprite_index = spr_player_run;
+	} else if (keyboard_check(ord("A")) && global.playerControlsEnabled) {
+		facing = -1;
+		if (!in_air)  sprite_index = spr_player_run;
+	}
 draw_self();
 

@@ -16,6 +16,12 @@ if (global.checkpointR == room) {
 	camera_set_view_size(view_camera[0], global.cameraW, global.cameraH);
 }
 
+
+//---
+print_bbox();
+
+
+//---
 // basic move vars
 move_speed = 6;
 jump_impulse = 14;
@@ -52,3 +58,4 @@ sprite_bbox_left = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprit
 sprite_bbox_right = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
 sprite_bbox_bottom = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
 sprite_bbox_top = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index);
+show_debug_message("SPRITE BBOX " + string(sprite_bbox_left) + "," + string(sprite_bbox_right) +"," + string(sprite_bbox_bottom) + "," + string(sprite_bbox_top));

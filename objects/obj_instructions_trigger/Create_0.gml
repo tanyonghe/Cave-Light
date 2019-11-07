@@ -9,6 +9,8 @@ inst_yscale = 1;
 shouldEnableControls = false; //only for 1-1
 
 instructionSprite = spr_crystal_ice; // SPECIFY IN CREATION CODE
+textString = "" // SPECIFY IN CREATION CODE
+drawTextInstruction = false; // OVERRIDE IN CREATION CODE
 inst_image_num = 1; // OVERRIDE IN CREATION CODE
 inst_image_speed = 5; // OVERRIDE IN CREATION CODE
 

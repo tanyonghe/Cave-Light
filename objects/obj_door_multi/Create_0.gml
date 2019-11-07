@@ -1,6 +1,8 @@
 /// @description Door which needs multiple switches
 
-opened = false; // to override initial state, put "opened = true; image_alpha = 0.2" in creation code
+startClosed = true; // to override initial state, put "startOpened = false; image_alpha = 0.2" in creation code
+//"polarity" of door is decided here instead of in switch events for convenience
+
 collision_map = layer_tilemap_get_id(layer_get_id("Collision_Map"));
 required_switches = 2;
 curr_switches = 0;

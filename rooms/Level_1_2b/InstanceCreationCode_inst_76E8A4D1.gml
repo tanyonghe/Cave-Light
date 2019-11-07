@@ -1,0 +1,1 @@
+textString = "There's a ton of exposed ore here! Too bad this\n \"mining laser\" would probably just bounce right off \nnow though..."

@@ -1,14 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
+sprite_index = spr_player_idle; // reset
 
 var dx = move_speed * (keyboard_check(ord("D")) - keyboard_check(ord("A")));
 
 if (global.playerControlsEnabled) {
-	if (keyboard_check(ord("D"))) {
-		facing = 1;
-	} else if (keyboard_check(ord("A"))) {
-		facing = -1;
-	}
+	//if (keyboard_check(ord("D"))) {
+	//	facing = 1;
+	//} else if (keyboard_check(ord("A"))) {
+	//	facing = -1;
+	//}
 } else {
 	dx = 0;
 }
