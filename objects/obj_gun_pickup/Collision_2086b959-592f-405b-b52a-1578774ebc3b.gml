@@ -6,6 +6,7 @@ if (!triggered && keyboard_check(ord("W"))) {
 	show_debug_message("ALL GUNS BLAZING: Player found a gun!");
 	global.hasGun = true;
 	alarm[0] = 5;
+	instance_destroy(obj_w_press);
 	
 	instance_create_layer(3072, 688, "Instances", obj_checkpoint);
 	
