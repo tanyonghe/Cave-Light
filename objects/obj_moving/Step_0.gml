@@ -25,7 +25,14 @@ if (d > 0) { // +ve x (right) / +ve y (down)
 			y = ((bbox_bottom & ~31) - 1) - sprite_bbox_bottom;
 		}
 		
-		move_speed = -move_speed;
+		if (stop_counter_limit == 0 || stop_counter >= stop_counter_limit) {
+			move_speed = -prev_speed;
+			prev_speed = move_speed;
+			stop_counter = 0;
+		} else {
+			move_speed = 0;
+			stop_counter += 1;
+		}
 		
 		
 	}
@@ -40,7 +47,14 @@ if (d > 0) { // +ve x (right) / +ve y (down)
 		} else {
 			y = ((bbox_top + 32) & ~31) - sprite_bbox_top;
 		}
-		move_speed = -move_speed;
+		if (stop_counter_limit == 0 || stop_counter >= stop_counter_limit) {
+			move_speed = -prev_speed;
+			prev_speed = move_speed;
+			stop_counter = 0;
+		} else {
+			move_speed = 0;
+			stop_counter += 1;
+		}
 		
 	}
 }

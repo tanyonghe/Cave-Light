@@ -12,6 +12,8 @@ if (global.numOfLives > 0) {
 		x = global.checkpointX;
 		y = global.checkpointY;
 		camera_set_view_size(view_camera[0], global.cameraW, global.cameraH);
+	} else {
+		room_restart();
 	}
 } else {
 	with (all) {

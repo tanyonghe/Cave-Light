@@ -38,6 +38,9 @@ if ((t1 != 0 || t2 != 0) || coyote_counter < 10) {
 		}
 		coyote_counter = 10;
 		v_speed = -jump_impulse;
+		if (keyboard_check(ord("W"))) {
+			v_speed *= 1.25;
+		}
 		dx_in_air = dx;
 		footstep_counter = 0;
 		audio_stop_sound(player_footsteps);

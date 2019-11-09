@@ -34,6 +34,7 @@ facing = 1; // 1 is right, -1 is left
 footstep_counter = 0;
 in_air = false;
 coyote_counter = 0;
+jump_counter = 0;
 
 // shooting vars
 cooldown = 0;

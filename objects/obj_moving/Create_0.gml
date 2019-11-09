@@ -2,8 +2,11 @@
 
 // basic move vars
 move_speed = 3;
+prev_speed = move_speed;
 dir = "x";
 should_move = true;
+stop_counter_limit = 0;
+stop_counter = 0;
 
 // tile map info
 var l = layer_get_id("Enemy_Map");
