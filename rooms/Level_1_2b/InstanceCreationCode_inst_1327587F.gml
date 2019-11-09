@@ -1,4 +1,4 @@
 dir = "x";
-maxDisplacement = 768;
+maxDisplacement = 704;
 continuous = true;
 dx = 3;
