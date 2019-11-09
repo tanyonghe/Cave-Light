@@ -17,9 +17,17 @@ if (global.playerControlsEnabled) {
 var dy = v_speed;
 v_speed += grav;
 
-var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
-var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
-if (t1 != 0 || t2 != 0) {
+var t1 = tilemap_get_at_pixel(tilemap, bbox_left+17, bbox_bottom + 1) & tile_index_mask;
+var t2 = tilemap_get_at_pixel(tilemap, bbox_right-16, bbox_bottom + 1) & tile_index_mask;
+
+// if player on ground
+if ((t1 != 0 || t2 != 0) || coyote_counter < 10) {
+	if (t1 != 0 || t2 != 0) {
+		coyote_counter = 0;
+	} else {
+		coyote_counter += 1;
+	}
+	
 	if (global.playerControlsEnabled && keyboard_check(vk_space)) {
 	//if (keyboard_check(vk_space)) {
 		if (!audio_is_playing(player_jump)) {
@@ -28,6 +36,7 @@ if (t1 != 0 || t2 != 0) {
 			audio_sound_set_track_position(snd, 0.2);
 			//audio_sound_pitch(sfx_jump, choose(0.2, 0.5, 1, 1.5, 2));
 		}
+		coyote_counter = 10;
 		v_speed = -jump_impulse;
 		dx_in_air = dx;
 		footstep_counter = 0;
@@ -38,7 +47,7 @@ if (t1 != 0 || t2 != 0) {
 // do vertical movement
 y += dy;
 if (dy > 0) { // down
-	var t1 = tilemap_get_at_pixel(tilemap, bbox_left+16, bbox_bottom) & tile_index_mask;
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_left+17, bbox_bottom) & tile_index_mask;
 	var t2 = tilemap_get_at_pixel(tilemap, bbox_right-16, bbox_bottom) & tile_index_mask;
 	
 	if (t1 != 0 || t2 != 0) {
@@ -80,7 +89,7 @@ if (dy > 0) { // down
 	}
 	
 } else { // up 
-	var t1 = tilemap_get_at_pixel(tilemap, bbox_left+16, bbox_top) & tile_index_mask;
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_left+17, bbox_top) & tile_index_mask;
 	var t2 = tilemap_get_at_pixel(tilemap, bbox_right-16, bbox_top) & tile_index_mask;
 	
 	if (t1 != 0 || t2 != 0) {
