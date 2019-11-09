@@ -8,7 +8,11 @@ if (invuln) {
 global.numOfLives = max(global.numOfLives - 1, 0);
 
 if (global.numOfLives > 0) {
-	room_restart();
+	if (global.checkpointR == room) {
+		x = global.checkpointX;
+		y = global.checkpointY;
+		camera_set_view_size(view_camera[0], global.cameraW, global.cameraH);
+	}
 } else {
 	with (all) {
 		move_speed = 0;
