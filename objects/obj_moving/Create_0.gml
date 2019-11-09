@@ -2,7 +2,7 @@
 
 // basic move vars
 move_speed = 3;
-prev_speed = move_speed;
+curr_speed = move_speed;
 dir = "x";
 should_move = true;
 stop_counter_limit = 0;

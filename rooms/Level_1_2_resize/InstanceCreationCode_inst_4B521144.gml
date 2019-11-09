@@ -1,1 +1,1 @@
-stop_counter_limit = 10;
+stop_counter_limit = 60;

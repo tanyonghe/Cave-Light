@@ -20,17 +20,19 @@ if (d > 0) { // +ve x (right) / +ve y (down)
 	if (t1 != 0 || t2 != 0) {
 		if (dir = "x") {
 			x = ((bbox_right & ~31) - 1) - sprite_bbox_right;
-			image_xscale = 1;
+			if (stop_counter_limit == 0 || stop_counter > stop_counter_limit) {
+				image_xscale = 1;
+			}
 		} else {
 			y = ((bbox_bottom & ~31) - 1) - sprite_bbox_bottom;
 		}
 		
-		if (stop_counter_limit == 0 || stop_counter >= stop_counter_limit) {
-			move_speed = -prev_speed;
-			prev_speed = move_speed;
+		if (stop_counter_limit == 0 || stop_counter > stop_counter_limit) {
+			curr_speed = -move_speed;
+			move_speed = -move_speed;
 			stop_counter = 0;
 		} else {
-			move_speed = 0;
+			curr_speed = 0;
 			stop_counter += 1;
 		}
 		
@@ -43,16 +45,18 @@ if (d > 0) { // +ve x (right) / +ve y (down)
 	if (t1 != 0 || t2 != 0) {
 		if (dir = "x") {
 			x = ((bbox_left + 32) & ~31) - sprite_bbox_left;
-			image_xscale = -1;
+			if (stop_counter_limit == 0 || stop_counter > stop_counter_limit) {
+				image_xscale = -1;
+			}
 		} else {
 			y = ((bbox_top + 32) & ~31) - sprite_bbox_top;
 		}
-		if (stop_counter_limit == 0 || stop_counter >= stop_counter_limit) {
-			move_speed = -prev_speed;
-			prev_speed = move_speed;
+		if (stop_counter_limit == 0 || stop_counter > stop_counter_limit) {
+			curr_speed = -move_speed;
+			move_speed = -move_speed;
 			stop_counter = 0;
 		} else {
-			move_speed = 0;
+			curr_speed = 0;
 			stop_counter += 1;
 		}
 		
