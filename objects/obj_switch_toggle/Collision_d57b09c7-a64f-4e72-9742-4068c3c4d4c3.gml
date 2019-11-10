@@ -8,7 +8,7 @@ if (!canToggle) { // an interval before it can be toggled
 
 if (instance_exists(linked_inst)) {
 	with (linked_inst) {
-		if (other.action) {
+		if (other.action) { // true => open
 			event_user(0);
 			audio_play_sound(switch_on, 1, false);
 		} else {  //close

@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "obj_crystal_ice",
     "eventList": [
-        
+        {
+            "id": "394f984e-ea5d-4b86-ab06-53450e2f1a99",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "1e6d2c62-c0bb-4ff0-9753-87d766078b7b"
+        },
+        {
+            "id": "90918c6e-d5ab-43fa-ae9a-baff647ab70f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "1e6d2c62-c0bb-4ff0-9753-87d766078b7b"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
