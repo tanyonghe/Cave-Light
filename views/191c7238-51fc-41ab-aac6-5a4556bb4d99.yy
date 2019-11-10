@@ -12,7 +12,9 @@
         "9947d270-c965-4b0d-aa3e-e7176b56da35",
         "a06a5f54-aa3f-4d25-bab1-e18afee35e5a",
         "71780b27-d0c1-470a-b93c-665a7a217aad",
-        "f14a4633-ad94-4d5d-8b0f-2228940e74bc"
+        "f14a4633-ad94-4d5d-8b0f-2228940e74bc",
+        "8dbf394c-578f-4259-92dc-5e17e958ad8b",
+        "45eb0eef-0de3-4f3d-b124-17660e171151"
     ],
     "filterType": "GMSprite",
     "folderName": "enemies\/hazards",

@@ -43,16 +43,26 @@ else if (global.game_over != true && game_over_render == true) {
 if (!pause) {
 	cx = following.x - (view_w/2);
 	cy = following.y - (view_h/2);
+	
+	//var maxDist = sqrt(power(view_h/2, 2) + power(view_w/2, 2));
+	//var mouseX_Windowspace = window_view_mouse_get_x(0);
+	//var mouseY_Windowspace = window_view_mouse_get_y(0);
+	//show_debug_message("mouse X: " + string(mouseX_Windowspace) + ", mouse Y: " + string(mouseY_Windowspace));
+	//show_debug_message("view_h/2: " +string(view_h/2) + ", view_w/2: " + string(view_w/2));
+	//var dist = point_distance(mouseX_Windowspace , mouseY_Windowspace, view_w/2, view_h/2);
+	//var effect = point_distance(mouseX_Windowspace , mouseY_Windowspace, view_w/2, view_h/2) / maxDist;
+	//var clamped = clamp(0.4 * effect, 0, 0.6);
+	//show_debug_message("DIST: " + string(dist) + ", EFFECT: "+ string(effect) + " | CLAMPED: " + string(clamped));
 
 	if (mouse_x - following.x > 540) {
-		cx = lerp(following.x, mouse_x - 540, 0.8) - (view_w/2);
+		cx = lerp(following.x, mouse_x - 540, 0.6) - (view_w/2);
 	} else if (mouse_x - following.x < -540) {
-		cx = lerp(following.x, mouse_x + 540, 0.8) - (view_w/2);
+		cx = lerp(following.x, mouse_x + 540, 0.6) - (view_w/2);
 	}
 	if (mouse_y - following.y > 320) {
-		cy = lerp(following.y, mouse_y - 320, 0.7) - (view_h/2);
+		cy = lerp(following.y, mouse_y - 320, 0.5) - (view_h/2);
 	} else if (mouse_y - following.y < -320) {
-		cy = lerp(following.y, mouse_y + 320, 0.7) - (view_h/2);
+		cy = lerp(following.y, mouse_y + 320, 0.5) - (view_h/2);
 	}
 	camera_set_view_pos(view_camera[0], cx, cy);
 }

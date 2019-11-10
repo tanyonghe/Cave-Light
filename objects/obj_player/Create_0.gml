@@ -24,7 +24,8 @@ print_bbox();
 //---
 // basic move vars
 move_speed = 6;
-jump_impulse = 14;
+jump_impulse = 8 //14;
+jump_accel = -0.75; //TESTING
 grav = 0.75;
 v_speed = 0;
 dx_in_air = 0;
@@ -35,6 +36,9 @@ footstep_counter = 0;
 in_air = false;
 coyote_counter = 0;
 jump_counter = 0;
+
+is_jumping = false;
+max_jump_time = 12; // how many frames you can hold spacebar to jump higher
 
 // shooting vars
 cooldown = 0;

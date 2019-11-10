@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 sprite_index = spr_player_idle; // reset
+image_blend = c_white; //reset, red for contact during invuln
+if (is_jumping) {
+	if (keyboard_check(vk_space)) {
+		v_speed = v_speed + jump_accel;
+	} else {
+		is_jumping = false;
+	}
+}
 
 var dx = move_speed * (keyboard_check(ord("D")) - keyboard_check(ord("A")));
 
@@ -38,9 +46,12 @@ if ((t1 != 0 || t2 != 0) || coyote_counter < 10) {
 		}
 		coyote_counter = 10;
 		v_speed = -jump_impulse;
-		if (keyboard_check(ord("W"))) {
-			v_speed *= 1.25;
-		}
+		is_jumping = true;
+		alarm[1] = max_jump_time;
+		//if (keyboard_check(ord("W"))) {
+		//	v_speed *= 1.25;
+			
+		//}
 		dx_in_air = dx;
 		footstep_counter = 0;
 		audio_stop_sound(player_footsteps);
@@ -167,6 +178,8 @@ if (instance_exists(obj_platform)) {
 		}
 		if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
 			v_speed = -jump_impulse;
+			is_jumping = true;
+			alarm[1] = max_jump_time;
 		} else {
 			v_speed = 0;
 			y = platform.y - sprite_get_height(spr_player)/2 - 12;

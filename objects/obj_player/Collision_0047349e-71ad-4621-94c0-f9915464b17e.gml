@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 if (invuln) {
+	image_blend = c_red;
 	return;
 }
 

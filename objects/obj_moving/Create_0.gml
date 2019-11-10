@@ -5,7 +5,7 @@ move_speed = 3;
 curr_speed = move_speed;
 dir = "x";
 should_move = true;
-stop_counter_limit = 0;
+stop_counter_limit = 10;
 stop_counter = 0;
 
 // tile map info
