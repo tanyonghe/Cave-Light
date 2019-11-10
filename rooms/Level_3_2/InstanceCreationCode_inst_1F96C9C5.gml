@@ -1,4 +1,4 @@
 motion = 1;
 continuous = 1;
-maxDisplacement = 480;
+maxDisplacement = 448;
 dir="x"

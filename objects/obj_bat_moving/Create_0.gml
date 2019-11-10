@@ -7,7 +7,7 @@ displayExclamation = false;
 
 flap_counter = 0;
 
-freeze_counter = 120; // frames
+freeze_counter = 90; // frames
 
 original_image_speed = image_speed;
 //original_move_speed = move_speed;
