@@ -14,7 +14,7 @@ laser_touching = false; // countdown only starts when laser stops touching
 
 image_blend = c_fuchsia; //temp
 
-countdown_time = 240; // frames
+countdown_time = 180; // frames
 time_left = countdown_time; // have to put this in creation code if defining diff countdown time
 
 laser_touched_once = false; // so countdown bar not drawn at start;

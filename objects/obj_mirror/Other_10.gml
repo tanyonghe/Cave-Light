@@ -1,6 +1,6 @@
 /// @description Melt into water
 
-with (instance_create_layer(x, y, "Invisible_Instances", obj_water)) {
+with (instance_create_layer(x, y, "Water", obj_water)) {
 	image_xscale = other.image_xscale;
 	image_yscale = other.image_yscale;
 }

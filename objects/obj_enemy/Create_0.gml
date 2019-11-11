@@ -3,4 +3,4 @@
 
 event_inherited();
 
-enemy_life = 5;
+enemy_life = 20;

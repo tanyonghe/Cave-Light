@@ -26,7 +26,7 @@ for (i = y1; i < y2+1; i+= 16) { // top to bottom
 			//TODO seems to be a bug where if you stand *nearby* it treats it as a collision
 			show_debug_message(" >> TILEMAP SET WHERE PLAYER IS (" + string(obj_player.x) + "," + string(obj_player.y) + ")");
 			with(obj_player) {
-				event_user(0);
+				event_user(1);
 			}
 		}
 	}

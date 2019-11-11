@@ -27,7 +27,14 @@ with (obj_laser_hit) {
 
 
 //if (inst.hitboxBeamType == beamTypes.frost) {
-if hasFrost {
+if hasSurge {
+	with (instance_create_layer(x, y, "Invisible_Instances", obj_electrified_water)) {
+		image_xscale = other.image_xscale;
+		image_yscale = other.image_yscale;
+		image_alpha = 0.3;
+	}
+
+} else if hasFrost {
 	//instance_change(obj_ice, 1);
 	with (instance_create_layer(x, y, "Invisible_Instances", obj_mirror)) {
 		image_xscale = other.image_xscale;

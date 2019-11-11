@@ -1,4 +1,4 @@
-/// @description Die from door
+/// @description Die
 
 if (invuln) {
 	image_blend = c_red;
@@ -24,4 +24,3 @@ if (global.numOfLives > 0) {
 	}
 	global.game_over = true;
 }
-//TODO play squelching sound
