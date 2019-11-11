@@ -44,7 +44,7 @@ if hasSurge {
 		image_yscale = other.image_yscale;
 		image_angle = image_angle + 180;
 		image_alpha = 0.5;
-		type = "ice";
+		mirror_type = "ice";
 	}
 	// make it solid
 	set_tilemap_within_bbox(layer_tilemap_get_id(layer_get_id("Collision_Map")), 1);
