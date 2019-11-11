@@ -28,6 +28,9 @@ with (obj_laser_hit) {
 
 //if (inst.hitboxBeamType == beamTypes.frost) {
 if hasSurge {
+	//if (position_meeting(x, y, obj_electrified_water)) { // prevent creating multiple instances
+	//	return;
+	//}
 	with (instance_create_layer(x, y, "Invisible_Instances", obj_electrified_water)) {
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;

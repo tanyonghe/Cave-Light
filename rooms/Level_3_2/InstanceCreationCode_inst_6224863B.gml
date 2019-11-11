@@ -1,4 +1,4 @@
 motion = 1;
 continuous = 1;
 maxDisplacement = 736;
-dy=3.8;
+dy=3;
