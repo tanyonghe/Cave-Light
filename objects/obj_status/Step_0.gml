@@ -41,6 +41,10 @@ else if (global.game_over != true && game_over_render == true) {
 
 // Allows panning around player object near edge of screen
 if (!pause) {
+	following = obj_player;
+	view_w = camera_get_view_width(view_camera[0]);
+	view_h = camera_get_view_height(view_camera[0]);
+	
 	cx = following.x - (view_w/2);
 	cy = following.y - (view_h/2);
 	
