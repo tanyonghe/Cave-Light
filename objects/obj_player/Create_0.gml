@@ -10,6 +10,8 @@ global.playerControlsEnabled = true;
 pause = false;
 invuln = false;
 
+global.playerKilledByDoors = true; // if standing in the same place as a closing door should kill you
+
 if (global.checkpointR == room) {
 	x = global.checkpointX;
 	y = global.checkpointY;

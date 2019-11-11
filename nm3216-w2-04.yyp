@@ -1359,6 +1359,14 @@
             }
         },
         {
+            "Key": "d6cc76e1-66f2-425f-b843-951d192e82eb",
+            "Value": {
+                "id": "b6e778ed-4744-4359-9fc4-3be097be5684",
+                "resourcePath": "objects\\obj_switch_timer\\obj_switch_timer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d7e85867-df26-4f10-9aab-f16c789b61d8",
             "Value": {
                 "id": "13587b25-d4f8-46ae-b466-c80a4b6adb24",
