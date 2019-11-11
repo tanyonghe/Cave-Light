@@ -48,10 +48,6 @@ if ((t1 != 0 || t2 != 0) || coyote_counter < 10) {
 		v_speed = -jump_impulse;
 		is_jumping = true;
 		alarm[1] = max_jump_time;
-		//if (keyboard_check(ord("W"))) {
-		//	v_speed *= 1.25;
-			
-		//}
 		dx_in_air = dx;
 		footstep_counter = 0;
 		audio_stop_sound(player_footsteps);
@@ -176,14 +172,38 @@ if (instance_exists(obj_platform)) {
 			x_diff = platform.x - x;
 			x_diff_set = true;
 		}
-		if (keyboard_check(vk_space) || keyboard_check(ord("W"))) {
+		if (keyboard_check(vk_space)) {
 			v_speed = -jump_impulse;
 			is_jumping = true;
 			alarm[1] = max_jump_time;
 		} else {
 			v_speed = 0;
 			y = platform.y - sprite_get_height(spr_player)/2 - 12;
-			x = platform.x - x_diff;
+			new_x = platform.x - x_diff;
+			x = new_x;
+			
+			// should have made these checks into scripts lmao
+			if (new_x > x) { // right
+				var t1 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
+				var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
+				var t3 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top + sprite_height/2) & tile_index_mask;
+	
+				if (t1 != 0 || t2 != 0 || t3 != 0) {
+					x = ((bbox_right & ~31) - 1) - sprite_bbox_right;
+					dx_in_air = 0;
+					x_diff_set = false;
+				} 
+			} else { // left 
+				var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
+				var t2 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom) & tile_index_mask;
+				var t3 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top + sprite_height/2) & tile_index_mask;
+	
+				if (t1 != 0 || t2 != 0 || t3 != 0) {
+					x = ((bbox_left + 32) & ~31) - sprite_bbox_left;
+					dx_in_air = 0;
+					x_diff_set = false;
+				}
+			}
 		}
 	} else {
 		y += dy;
