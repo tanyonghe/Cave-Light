@@ -1,0 +1,1 @@
+linked_inst = platformonedir_4_2_a;
