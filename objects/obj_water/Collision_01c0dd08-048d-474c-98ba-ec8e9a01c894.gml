@@ -43,20 +43,22 @@ if hasSurge {
 } else if hasFrost {
 	//instance_change(obj_ice, 1);
 	
-	var x_origin_interval = sprite_width/4;
-	var ice_xscale = image_xscale / 2;
-	var ice_yscale = image_yscale;
+	///// ====== THREE ICE BLOCKS =====
+	//var x_origin_interval = sprite_width/4;
+	//var ice_xscale = image_xscale / 2;
+	//var ice_yscale = image_yscale;
 	
-	//points = origin, origin - 1/4, origin + 1/4
-	for (var i = -1; i <= 1; i++) {
-		// create three half-sized blocks at x-interval, x, x+interval
-		with (instance_create_layer(x + i * x_origin_interval, y, "Invisible_Instances", obj_mirror)) {
-			image_xscale = ice_xscale;
-			image_yscale = ice_yscale;
-			image_alpha = 0.5;
-			mirror_type = "ice";
-		}
-	}
+	////points = origin, origin - 1/4, origin + 1/4
+	//for (var i = -1; i <= 1; i++) {
+	//	// create three half-sized blocks at x-interval, x, x+interval
+	//	with (instance_create_layer(x + i * x_origin_interval, y, "Invisible_Instances", obj_mirror)) {
+	//		image_xscale = ice_xscale;
+	//		image_yscale = ice_yscale;
+	//		image_alpha = 0.5;
+	//		mirror_type = "ice";
+	//	}
+	//}
+	//// ==================================
 	
 	with (instance_create_layer(x, y, "Invisible_Instances", obj_mirror)) {
 		image_xscale = other.image_xscale;

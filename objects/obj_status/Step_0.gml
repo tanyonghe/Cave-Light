@@ -47,8 +47,8 @@ if (!pause) {
 	
 	cx = following.x - (view_w/2);
 	cy = following.y - (view_h/2);
-	threshold_w = view_w * 0.35;
-	threshold_h = view_h * 0.3;
+	threshold_w = view_w * 0.38//0.35;
+	threshold_h = view_h * 0.35//0.3;
 	
 	//var maxDist = sqrt(power(view_h/2, 2) + power(view_w/2, 2));
 	//var mouseX_Windowspace = window_view_mouse_get_x(0);

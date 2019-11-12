@@ -1,1 +1,1 @@
-textString = "Lot of wild animals here. Better keep a distance!.";
+textString = "Lot of wild animals here. Better keep a distance!";

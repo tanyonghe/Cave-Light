@@ -4,10 +4,10 @@ if (should_move) {
 	if (motion == 1) {
 	
 		if (dir = "y") { // down
-			y -= dy;
+			y += dy;
 			displacement += dy;
 		} else { // right
-			x -= dx;
+			x += dx;
 			displacement += dx;
 		}
 	
