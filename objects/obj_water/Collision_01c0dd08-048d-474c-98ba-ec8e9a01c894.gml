@@ -31,7 +31,10 @@ if hasSurge {
 	//if (position_meeting(x, y, obj_electrified_water)) { // prevent creating multiple instances
 	//	return;
 	//}
+	
 	with (instance_create_layer(x, y, "Invisible_Instances", obj_electrified_water)) {
+		//create three overlapping mirrors to avoid the non reflection bug
+		
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
 		image_alpha = 0.3;
@@ -39,6 +42,22 @@ if hasSurge {
 
 } else if hasFrost {
 	//instance_change(obj_ice, 1);
+	
+	var x_origin_interval = sprite_width/4;
+	var ice_xscale = image_xscale / 2;
+	var ice_yscale = image_yscale;
+	
+	//points = origin, origin - 1/4, origin + 1/4
+	for (var i = -1; i <= 1; i++) {
+		// create three half-sized blocks at x-interval, x, x+interval
+		with (instance_create_layer(x + i * x_origin_interval, y, "Invisible_Instances", obj_mirror)) {
+			image_xscale = ice_xscale;
+			image_yscale = ice_yscale;
+			image_alpha = 0.5;
+			mirror_type = "ice";
+		}
+	}
+	
 	with (instance_create_layer(x, y, "Invisible_Instances", obj_mirror)) {
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
