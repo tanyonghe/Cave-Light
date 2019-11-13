@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "175d29df-bbb2-4d6d-991e-2dd995735ef6",
+            "Value": {
+                "id": "ce3f641f-207c-407e-a947-f70b41981157",
+                "resourcePath": "views\\175d29df-bbb2-4d6d-991e-2dd995735ef6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "18454edf-5a9c-4e51-b8b8-7f124f017a6e",
             "Value": {
                 "id": "788edc59-6465-4f8a-a065-f1b03316f5a4",
@@ -447,6 +455,14 @@
             }
         },
         {
+            "Key": "46b629ed-6afb-4329-8d35-7faddf915d8b",
+            "Value": {
+                "id": "0fdf2edc-9050-4d47-bdf3-b4fc07db647d",
+                "resourcePath": "sprites\\spr_switch_cont\\spr_switch_cont.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46bddc15-0ba7-46ec-9267-469de203e7c5",
             "Value": {
                 "id": "b82dfa06-c14d-4b30-bf5a-6da4ae58ac7a",
@@ -459,6 +475,14 @@
             "Value": {
                 "id": "ebfba4ad-10fe-47f1-a186-96065f3a9aed",
                 "resourcePath": "sprites\\spr_background_ceiling\\spr_background_ceiling.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "491ad625-f5fb-4bbf-b98f-57780dcb91f2",
+            "Value": {
+                "id": "6a490a52-f5b3-4e4b-a0bc-17aa127697c4",
+                "resourcePath": "sprites\\spr_switch_surge\\spr_switch_surge.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -495,10 +519,18 @@
             }
         },
         {
+            "Key": "4deaa230-526b-4d00-a667-be89ea7770b4",
+            "Value": {
+                "id": "3a24f464-93d9-4c69-9c1a-21c8555432af",
+                "resourcePath": "sprites\\spr_switch_toggle\\spr_switch_toggle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e10f1a0-159a-444f-9b9d-dcb442b0c3b4",
             "Value": {
                 "id": "8b197a10-ac7e-4d1e-9725-0d2f5ced8d48",
-                "resourcePath": "sprites\\spr_switch_toggle\\spr_switch_toggle.yy",
+                "resourcePath": "sprites\\spr_switch_lighted\\spr_switch_lighted.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1300,14 +1332,6 @@
                 "id": "f2646884-d987-40f7-8eb9-1070f843574e",
                 "resourcePath": "tilesets\\til_ores\\til_ores.yy",
                 "resourceType": "GMTileSet"
-            }
-        },
-        {
-            "Key": "c05b98ef-2722-4096-9fc0-99602e9c2ed9",
-            "Value": {
-                "id": "efdc5801-4b17-4be3-a906-7228ab90e5ff",
-                "resourcePath": "objects\\obj_switch_once1\\obj_switch_once1.yy",
-                "resourceType": "GMObject"
             }
         },
         {

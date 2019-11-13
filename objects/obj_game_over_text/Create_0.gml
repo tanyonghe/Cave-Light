@@ -10,4 +10,4 @@ top = midy  + 220
 bottom = midy + 320
 
 canAdvance = false;
-alarm[0] = 120;
+alarm[0] = 30;

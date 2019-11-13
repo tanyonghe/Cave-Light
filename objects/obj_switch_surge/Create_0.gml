@@ -11,5 +11,3 @@ action = "open" //default;
 
 used = false;
 reusable = false;
-
-image_blend = c_purple;

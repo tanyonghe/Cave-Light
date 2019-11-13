@@ -8,5 +8,3 @@ action = true //default - true is user(0), false is user(1)
 canToggle = true;
 
 //used = false;
-
-image_blend = make_color_rgb(124, 212, 255); //temp
