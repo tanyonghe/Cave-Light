@@ -181,10 +181,10 @@ if (instance_exists(obj_platform)) {
 			v_speed = 0;
 			y = platform.y - sprite_get_height(spr_player)/2 - 12;
 			new_x = platform.x - x_diff;
-			x = new_x;
 			
 			// should have made these checks into scripts lmao
 			if (new_x > x) { // right
+				x = new_x;
 				var t1 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
 				var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
 				var t3 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top + sprite_height/2) & tile_index_mask;
@@ -195,6 +195,7 @@ if (instance_exists(obj_platform)) {
 					x_diff_set = false;
 				} 
 			} else { // left 
+				x = new_x;
 				var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
 				var t2 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom) & tile_index_mask;
 				var t3 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top + sprite_height/2) & tile_index_mask;
