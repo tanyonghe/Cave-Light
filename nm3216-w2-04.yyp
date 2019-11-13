@@ -74,7 +74,7 @@
             "Key": "06e86c03-7f67-4867-a344-b1578e2d3c51",
             "Value": {
                 "id": "74164553-99e5-4250-9566-8ecaf3802063",
-                "resourcePath": "rooms\\Level_1_3\\Level_1_3.yy",
+                "resourcePath": "rooms\\Level_1_3_Old\\Level_1_3_Old.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -258,7 +258,7 @@
             "Key": "288fe682-0908-40cb-8a5f-3332d9283eb0",
             "Value": {
                 "id": "12376f5c-5491-49fc-a84a-5e73e02f1a4b",
-                "resourcePath": "rooms\\Level_1_1\\Level_1_1.yy",
+                "resourcePath": "rooms\\Level_1_1_Old\\Level_1_1_Old.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -306,7 +306,7 @@
             "Key": "32cb65b5-ca9d-494a-b98a-9dfe20f01831",
             "Value": {
                 "id": "32ae3fac-8d6f-4593-8f1a-7df9c8f5b049",
-                "resourcePath": "rooms\\Level_2_1\\Level_2_1.yy",
+                "resourcePath": "rooms\\Level_2_1_Old\\Level_2_1_Old.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -506,7 +506,7 @@
             "Key": "4bae6163-d043-457d-9bb0-c357f85164aa",
             "Value": {
                 "id": "9329218b-cee7-4148-b049-a189d0e24873",
-                "resourcePath": "rooms\\Level_1_3_resize\\Level_1_3_resize.yy",
+                "resourcePath": "rooms\\Level_1_3\\Level_1_3.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -770,7 +770,7 @@
             "Key": "738f16b0-a6f5-4390-bb49-25bfa5b2f522",
             "Value": {
                 "id": "765d9cb0-48e5-423a-933f-6e11d45e67cc",
-                "resourcePath": "rooms\\Level_1_1_resize\\Level_1_1_resize.yy",
+                "resourcePath": "rooms\\Level_1_1\\Level_1_1.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1218,7 +1218,7 @@
             "Key": "b017f15a-3308-48b5-af8d-1d69cea0ded4",
             "Value": {
                 "id": "617a6994-d8ed-497a-a459-169f62ae3435",
-                "resourcePath": "fonts\\fnt_instructions\\fnt_instructions.yy",
+                "resourcePath": "fonts\\fnt_pause_menu\\fnt_pause_menu.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -1490,7 +1490,7 @@
             "Key": "ce5afc58-a343-413f-85b6-387dac3f0b57",
             "Value": {
                 "id": "be7652d8-c98f-4b5c-a914-c92e3e107759",
-                "resourcePath": "rooms\\Level_1_2b\\Level_1_2b.yy",
+                "resourcePath": "rooms\\Level_1_2_b\\Level_1_2_b.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1650,7 +1650,7 @@
             "Key": "de31407e-2f97-4b45-900b-14150645a95f",
             "Value": {
                 "id": "333ee23b-4554-462c-982f-0ad9a8916b93",
-                "resourcePath": "rooms\\Level_1_2_resize\\Level_1_2_resize.yy",
+                "resourcePath": "rooms\\Level_1_2_a\\Level_1_2_a.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1730,7 +1730,7 @@
             "Key": "ee4f5f33-f85d-4bff-84d7-4b7c623265e3",
             "Value": {
                 "id": "66a1230f-091f-4b1f-848b-6511c1ae6d53",
-                "resourcePath": "rooms\\Level_2_1_resize\\Level_2_1_resize.yy",
+                "resourcePath": "rooms\\Level_2_1\\Level_2_1.yy",
                 "resourceType": "GMRoom"
             }
         },

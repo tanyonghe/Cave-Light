@@ -9,6 +9,11 @@ draw_sprite(spr_screenshot, 0, 640, 360);
 draw_sprite(spr_menu_background, 0, 640, 360);
 //draw_sprite_ext(spr_backdrop,0,0,0,1,1,0,c_white,1);
 
+draw_set_colour(c_black);
+draw_set_font(fnt_pause_menu);
+draw_text(540, 412, room_get_name(room));
+draw_text(540, 445, string(global.continues));
+
 if (instructions == 0) {
 	//draw_sprite(spr_menu_navigation, 0, 440, 640);
 	

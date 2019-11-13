@@ -1,6 +1,7 @@
 // game status global variables
 global.numOfLives = 3;
 global.continues = 0;
+global.deaths = 0;
 global.game_over = false;
 global.hasGun = false;
 

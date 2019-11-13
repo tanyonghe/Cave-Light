@@ -1,6 +1,6 @@
 
 {
-    "name": "Level_1_2_resize",
+    "name": "Level_1_2_a",
     "id": "de31407e-2f97-4b45-900b-14150645a95f",
     "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,

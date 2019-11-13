@@ -6,6 +6,7 @@ if (invuln) {
 }
 
 global.numOfLives = max(global.numOfLives - 1, 0);
+global.deaths += 1;
 
 if (global.numOfLives > 0) {
 	if (global.checkpointR == room) {
