@@ -1,1 +1,0 @@
-mirror_type = "ice";
