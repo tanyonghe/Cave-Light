@@ -6,17 +6,13 @@ if (selected == 0) {
 }
 
 else if (selected == 1) {
-	select_level = 1;
-}
-
-else if (selected == 2) {
 	instructions = 1;
 }
 
-else if (selected == 3) {
+else if (selected == 2) {
 	credits = 1;
 }
 
-else if (selected == 4) {
+else if (selected == 3) {
 	game_end();
 }

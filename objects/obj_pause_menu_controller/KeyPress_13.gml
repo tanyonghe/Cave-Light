@@ -11,5 +11,5 @@ else if (selected == 1) {
 
 else if (selected == 2) {
 	instance_destroy();
-	game_restart();
+	room_goto(Game_Screen);
 }
