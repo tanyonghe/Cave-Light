@@ -1,10 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-sprite_index = spr_player_idle; // reset
+sprite_index = global.hasGun ? spr_player_idle_gun : spr_player_idle; // reset
 image_blend = c_white; //reset, red for contact during invuln
 if (is_jumping) {
 	if (keyboard_check(vk_space)) {
 		v_speed = v_speed + jump_accel;
+		in_air = true;
 	} else {
 		is_jumping = false;
 	}
