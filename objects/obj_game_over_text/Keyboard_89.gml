@@ -7,9 +7,21 @@ if (canAdvance) {
 	global.game_over = false;
 	
 	if (global.checkpointR == room) {
-		x = global.checkpointX;
-		y = global.checkpointY;
+		obj_status.game_over = false;
+		obj_status.game_over_render = false;
+		
+		with (obj_player) {
+			move_speed = 6;
+			jump_impulse = 8 //14;
+			jump_accel = -0.75; //TESTING
+			grav = 0.75;
+			v_speed = 0;
+			x = global.checkpointX;
+			y = global.checkpointY;
+		}
 		camera_set_view_size(view_camera[0], global.cameraW, global.cameraH);
+		instance_destroy(obj_game_over);
+		instance_destroy();
 	} else {
 		room_restart();
 	}

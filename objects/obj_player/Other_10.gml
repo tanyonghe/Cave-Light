@@ -17,7 +17,7 @@ if (global.numOfLives > 0) {
 		room_restart();
 	}
 } else {
-	with (all) {
+	with (obj_player) {
 		move_speed = 0;
 		jump_impulse = 0;
 		grav = 0;
