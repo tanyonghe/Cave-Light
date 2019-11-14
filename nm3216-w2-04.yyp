@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "679c91e4-0245-4aff-8f26-479f74afd4de",
+            "Value": {
+                "id": "67e8e7a9-a2fa-4786-ba2a-f661bec72149",
+                "resourcePath": "objects\\obj_game_end_controller\\obj_game_end_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "68b2c350-9efe-4e42-8718-f8e9efbe4345",
             "Value": {
                 "id": "08b2b7f8-b21a-415b-ae19-0744a5c6c90f",
@@ -844,6 +852,14 @@
                 "id": "dfe69e53-ea8b-4c4c-81ef-c303a43fd0bd",
                 "resourcePath": "scripts\\draw_laser\\draw_laser.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7c29dd1e-b33b-4473-b7f8-097d8a6ee8c0",
+            "Value": {
+                "id": "999799cc-7119-4356-a4ee-0f177f8bfd60",
+                "resourcePath": "sprites\\spr_game_end\\spr_game_end.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1306,7 +1322,7 @@
             "Key": "ba798dc2-f702-4297-88e9-e46307dbd40f",
             "Value": {
                 "id": "7e1d021c-5512-4e78-aa82-e2c171aa290a",
-                "resourcePath": "rooms\\Game_Over\\Game_Over.yy",
+                "resourcePath": "rooms\\Game_End\\Game_End.yy",
                 "resourceType": "GMRoom"
             }
         },
