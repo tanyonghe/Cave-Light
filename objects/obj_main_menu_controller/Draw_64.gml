@@ -13,6 +13,8 @@ if (global.completedGame == true) {
 
 draw_sprite(spr_game_title, 0, 640, 360 - 100);
 
+
+
 if (!(instructions || credits)) {
 	//draw_sprite(spr_menu_navigation, 0, 640, 730);
 	
@@ -21,6 +23,7 @@ if (!(instructions || credits)) {
 		draw_sprite(spr_instructions, 0, 640, 360 + 140);
 		draw_sprite(spr_credits, 0, 640, 360 + 210);
 		draw_sprite(spr_quit, 0, 640, 360 + 280);
+		//draw_sprite(spr_menu_navigation1, 0, 640, 360 + 380);
 	}
 
 	else if (selected == 1) {
@@ -28,6 +31,7 @@ if (!(instructions || credits)) {
 		draw_sprite(spr_instructions, 1, 640, 360 + 140);
 		draw_sprite(spr_credits, 0, 640, 360 + 210);
 		draw_sprite(spr_quit, 0, 640, 360 + 280);
+		//draw_sprite(spr_menu_navigation1, 0, 640, 360 + 380);
 	}
 
 	else if (selected == 2) {
@@ -35,6 +39,7 @@ if (!(instructions || credits)) {
 		draw_sprite(spr_instructions, 0, 640, 360 + 140);
 		draw_sprite(spr_credits, 1, 640, 360 + 210);
 		draw_sprite(spr_quit, 0, 640, 360 + 280);
+		//draw_sprite(spr_menu_navigation1, 0, 640, 360 + 380);
 	}
 	
 	else if (selected == 3) {
@@ -42,17 +47,18 @@ if (!(instructions || credits)) {
 		draw_sprite(spr_instructions, 0, 640, 360 + 140);
 		draw_sprite(spr_credits, 0, 640, 360 + 210);
 		draw_sprite(spr_quit, 1, 640, 360 + 280);
+		//draw_sprite(spr_menu_navigation1, 0, 640, 360 + 380);
 	}
 } 
 
 else if (instructions == 1) {
 	//draw_sprite(spr_menu_background, 0, 640, 360);
 	draw_sprite(spr_instructions_diagram, 0, 640, 360);
-	draw_sprite(spr_menu_spacebar, 0, 640, 360 + 200);
+	//draw_sprite(spr_menu_spacebar1, 0, 640, 360 + 200 + 100);
 } 
 
 else if (credits == 1) {
 	//draw_sprite(spr_menu_background, 0, 640, 360);
-	draw_sprite(spr_credits_names, 0, 640, 360);
-	draw_sprite(spr_menu_spacebar, 0, 640, 360 + 200);
+	draw_sprite(spr_credits_names, 0, 640, 460);
+	//draw_sprite(spr_menu_spacebar1, 0, 640, 360 + 200 + 100);
 }

@@ -14,6 +14,7 @@ draw_set_font(fnt_pause_menu);
 draw_text(540, 412, room_get_name(room));
 draw_text(540, 445, string(global.continues));
 
+//draw_sprite(spr_menu_navigation1, 0, 640, 360 + 200 + 100);
 if (instructions == 0) {
 	//draw_sprite(spr_menu_navigation, 0, 440, 640);
 	
@@ -39,5 +40,5 @@ if (instructions == 0) {
 	}
 } else {
 	draw_sprite(spr_instructions_diagram, 0, 640, 360);
-	draw_sprite(spr_menu_spacebar, 0, 640, 360 + 200);
+	draw_sprite(spr_menu_spacebar1, 0, 640, 360 + 200 + 100);
 }
