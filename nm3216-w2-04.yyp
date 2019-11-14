@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0704eed3-f774-428c-b32d-be7219e25232",
+            "Value": {
+                "id": "c13ead3e-d097-411d-b9e9-2daf8c15a9ba",
+                "resourcePath": "objects\\obj_switch_simultaneous\\obj_switch_simultaneous.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "09248d66-71c8-4444-b454-092167d75851",
             "Value": {
                 "id": "3ffb0f72-7fea-4e7c-94c5-7e22df50ccc1",
