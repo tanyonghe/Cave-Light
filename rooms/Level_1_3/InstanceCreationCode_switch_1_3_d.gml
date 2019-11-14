@@ -1,1 +1,0 @@
-linked_inst = platform_1_3_d;
