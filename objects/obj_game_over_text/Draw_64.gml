@@ -1,6 +1,6 @@
  /// @description Insert description here
 // You can write your code in this editor
-
+/*
 if (canAdvance) {
 	
 	draw_rectangle_colour(left-5, top-5, right+5, bottom+5, c_white, c_white, c_white, c_white, false);
@@ -16,3 +16,4 @@ if (canAdvance) {
 	draw_text(midx, top + 80, "Continues used: " + string(global.continues));
 	draw_set_font(-1);
 }
+*/

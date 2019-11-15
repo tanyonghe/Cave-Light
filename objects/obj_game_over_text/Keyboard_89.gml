@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 if (canAdvance) {
 	global.continues += 1;
 	global.numOfLives = 3;
@@ -33,3 +33,4 @@ if (canAdvance) {
 		room_restart();
 	}
 }
+*/
