@@ -62,7 +62,16 @@ if (dy > 0) { // down
 	var t2 = tilemap_get_at_pixel(tilemap, bbox_right-16, bbox_bottom) & tile_index_mask;
 	
 	if (t1 != 0 || t2 != 0) {
+		var oldy = y;
 		y = ((bbox_bottom & ~31) - 1) - sprite_bbox_bottom;
+		
+		t1 = tilemap_get_at_pixel(tilemap, bbox_left+17, bbox_bottom) & tile_index_mask;
+	    t2 = tilemap_get_at_pixel(tilemap, bbox_right-16, bbox_bottom) & tile_index_mask;
+		if (t1 != 0 || t2 != 0) {
+			y = oldy;
+			x = ((bbox_right & ~31) - 1) - sprite_bbox_right;
+		}
+		
 		v_speed = 0;
 		dx_in_air = 0;
 		
@@ -104,7 +113,16 @@ if (dy > 0) { // down
 	var t2 = tilemap_get_at_pixel(tilemap, bbox_right-16, bbox_top) & tile_index_mask;
 	
 	if (t1 != 0 || t2 != 0) {
+		var oldy = y;
 		y = ((bbox_top + 32) & ~31) - sprite_bbox_top;
+		
+		t1 = tilemap_get_at_pixel(tilemap, bbox_left+17, bbox_bottom) & tile_index_mask;
+	    t2 = tilemap_get_at_pixel(tilemap, bbox_right-16, bbox_bottom) & tile_index_mask;
+		if (t1 != 0 || t2 != 0) {
+			y = oldy;
+			x = ((bbox_right & ~31) - 1) - sprite_bbox_right;
+		}
+		
 		v_speed = 0;
 		dx_in_air = 0;
 		
@@ -156,7 +174,7 @@ if (mouse_check_button(mb_left) && global.hasGun && global.playerControlsEnabled
 		audio_sound_gain(snd, 0.1, 0);
 	}
 	dir = point_direction(x, y, mouse_x, mouse_y); // update dir first, used both in step and draw
-	if (dir<90 || dir > 270) { // change orientation based on shooting direction
+	if (dir < 90 || dir > 270) { // change orientation based on shooting direction
 		facing = 1;
 	} else {
 		facing = -1;
