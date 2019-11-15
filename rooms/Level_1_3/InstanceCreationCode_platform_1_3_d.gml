@@ -1,4 +1,4 @@
-motion = 1;
-continuous = 1;
-maxDisplacement = 416;
+maxDisplacement = 448;
+dir = "y"
+dy = 2.5;
 should_move = false;

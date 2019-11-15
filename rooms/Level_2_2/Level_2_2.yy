@@ -24,7 +24,6 @@
         "49b37711-cc5e-4c1b-b657-84325d221f96",
         "ca1f71ab-7163-481c-adcc-62d8a2e6b43e",
         "d1e9b274-8ce7-499b-8a8c-e58dff2b45fb",
-        "a03d6304-e2a9-47da-993e-b2df3b8cd9e9",
         "be56ad4d-b793-4e18-a871-96562c0a4c6d",
         "4abd3ae5-2877-4210-950a-9ff50fdde67c",
         "885fc5be-d885-4214-8523-15c0b54aa08a",
@@ -60,6 +59,7 @@
         "39495426-7ef6-4974-94f7-c6d5eae84ef5",
         "e17510e4-7105-42e3-a387-8375fd6ed946",
         "74c381d9-fa54-4ebf-9b1e-f402c6575792",
+        "a03d6304-e2a9-47da-993e-b2df3b8cd9e9",
         "96f82d66-c3df-4bad-9bae-ec22fc8634ad"
     ],
     "IsDnD": false,
@@ -72,7 +72,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -155,7 +155,7 @@
             },
             "tilesetId": "87626378-5167-47d4-85dd-c65797373880",
             "userdefined_depth": false,
-            "visible": true,
+            "visible": false,
             "x": 0,
             "y": 0
         },
