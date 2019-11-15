@@ -1599,6 +1599,14 @@
             }
         },
         {
+            "Key": "cf6b551c-b3ba-468b-bfc5-b4a8682dfc6e",
+            "Value": {
+                "id": "55e0f574-72c5-476a-98da-9b586015d2f8",
+                "resourcePath": "sprites\\spr_light_glow\\spr_light_glow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cfc36df0-5a62-42c2-9043-006a862c17ac",
             "Value": {
                 "id": "d333a8af-9276-4b41-b567-553460e6267d",
