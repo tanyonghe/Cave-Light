@@ -12,10 +12,17 @@ if (canAdvance) {
 		
 		with (obj_player) {
 			move_speed = 6;
-			jump_impulse = 8 //14;
-			jump_accel = -0.75; //TESTING
+			jump_impulse = 8;
+			jump_accel = -0.75;
 			grav = 0.75;
 			v_speed = 0;
+			dx_in_air = 0;
+			x_diff = 0;
+			x_diff_set = false;
+			facing = 1;
+			footstep_counter = 0;
+			in_air = false;
+			coyote_counter = 0;
 			x = global.checkpointX;
 			y = global.checkpointY;
 		}
