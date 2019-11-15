@@ -1623,14 +1623,6 @@
             }
         },
         {
-            "Key": "cfc36df0-5a62-42c2-9043-006a862c17ac",
-            "Value": {
-                "id": "d333a8af-9276-4b41-b567-553460e6267d",
-                "resourcePath": "sprites\\spr_exit_to_game_menu\\spr_exit_to_game_menu.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "d21409fa-066f-4ae5-9012-5b7d855275ba",
             "Value": {
                 "id": "f9dc7213-c91d-4d3d-8486-64590e6b6cba",
