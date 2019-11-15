@@ -49,8 +49,8 @@ if obj_player.alarm[0] == 1 {
 	
 	switch(hitboxInst.hitboxBeamType) {
 		case beamTypes.normal:
-			var snd = audio_play_sound(player_lightbeam, 1, false);
-			audio_sound_gain(snd, 0.1, 0);
+			//var snd = audio_play_sound(player_lightbeam, 1, false);
+			//audio_sound_gain(snd, 0.1, 0);
 			break;
 		case beamTypes.frost:
 			var snd = audio_play_sound(player_frostbeam, 1, false);

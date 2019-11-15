@@ -150,6 +150,11 @@ if (dx > 0) { // right
 
 
 if (mouse_check_button(mb_left) && global.hasGun && global.playerControlsEnabled) {
+	if (mb_left_hold == false) {
+		mb_left_hold = true;
+		var snd = audio_play_sound(player_lightbeam, 1, false);
+		audio_sound_gain(snd, 0.1, 0);
+	}
 	dir = point_direction(x, y, mouse_x, mouse_y); // update dir first, used both in step and draw
 	if (dir<90 || dir > 270) { // change orientation based on shooting direction
 		facing = 1;
@@ -161,6 +166,8 @@ if (mouse_check_button(mb_left) && global.hasGun && global.playerControlsEnabled
 	if alarm[0] = -1 {
 		alarm[0] = room_speed/fire_rate;
 	}
+} else {
+	mb_left_hold = false;
 }
 
 // platform

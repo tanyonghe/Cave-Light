@@ -37,6 +37,7 @@ facing = 1; // 1 is right, -1 is left
 footstep_counter = 0;
 in_air = false;
 coyote_counter = 0;
+mb_left_hold = false;
 
 is_jumping = false;
 max_jump_time = 12; // how many frames you can hold spacebar to jump higher
