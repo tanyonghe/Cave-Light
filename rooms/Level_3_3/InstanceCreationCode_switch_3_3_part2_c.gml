@@ -1,0 +1,1 @@
+linked_inst = door_3_3_part2_c;
