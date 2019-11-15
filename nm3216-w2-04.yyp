@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "16aa1011-bdd4-47a9-b838-ac5bcc59bec4",
+            "Value": {
+                "id": "3cce21e7-9afc-463a-9ef5-b699976c065e",
+                "resourcePath": "views\\16aa1011-bdd4-47a9-b838-ac5bcc59bec4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "17256b32-d27b-4e65-82ad-e456975d3e28",
             "Value": {
                 "id": "ef55a403-cc3a-40b9-86a9-e537fdbb2b33",
@@ -228,6 +236,14 @@
                 "id": "af577a0c-ae22-41a7-a3da-bd3e0ee5b6ad",
                 "resourcePath": "sprites\\spr_instruction_jump\\spr_instruction_jump.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "22373bd3-3df6-43f4-a352-1e78b2fef3eb",
+            "Value": {
+                "id": "a829ce60-bdc2-4bd5-b959-656a28cac278",
+                "resourcePath": "views\\22373bd3-3df6-43f4-a352-1e78b2fef3eb.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -650,7 +666,7 @@
             "Key": "5e530bbb-9c17-4dd1-a7a6-3b59a1011842",
             "Value": {
                 "id": "ecbb54dd-c935-4b47-9368-a502ae2b7104",
-                "resourcePath": "objects\\obj_game_over\\obj_game_over.yy",
+                "resourcePath": "objects\\obj_game_over_controller\\obj_game_over_controller.yy",
                 "resourceType": "GMObject"
             }
         },
