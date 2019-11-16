@@ -9,7 +9,7 @@ global.numOfLives = max(global.numOfLives - 1, 0);
 global.deaths += 1;
 
 if (global.numOfLives > 0) {
-	if (global.checkpointR == room) {
+	if (global.checkpointR == room && !global.stageReset) {
 		x = global.checkpointX;
 		y = global.checkpointY;
 		camera_set_view_size(view_camera[0], global.cameraW, global.cameraH);

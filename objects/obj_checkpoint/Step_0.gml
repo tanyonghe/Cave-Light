@@ -2,6 +2,12 @@
 // You can write your code in this editor
 
 if (place_meeting(x, y, obj_player)) {
+	if (stage_reset) {
+		global.stageReset = true;
+	} else {
+		global.stageReset = false;
+	}
+	
 	global.checkpointID = id;
 	global.checkpointX = x;
 	global.checkpointY = y;

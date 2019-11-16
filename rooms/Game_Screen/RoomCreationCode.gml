@@ -10,3 +10,4 @@ global.checkpointID = 0;
 global.checkpointX = 0;
 global.checkpointY = 0;
 global.checkpointR = 0;
+global.stageReset = false;

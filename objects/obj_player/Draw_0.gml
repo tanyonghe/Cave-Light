@@ -9,6 +9,7 @@ if (mouse_check_button(mb_left) && global.hasGun && global.playerControlsEnabled
 }
 
 if (invuln) {
+	draw_set_color(c_white);
 	draw_text(x, y - 64, "invuln | " + string(fps));
 }
 

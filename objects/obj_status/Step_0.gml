@@ -3,6 +3,15 @@
 
 // Q disabled since we do not need it
 if (keyboard_check(ord("R"))) {
+	/*
+	if (global.checkpointR == room && !global.stageReset) {
+		x = global.checkpointX;
+		y = global.checkpointY;
+		camera_set_view_size(view_camera[0], global.cameraW, global.cameraH);
+	} else {
+		room_restart();
+	}
+	*/
 	room_restart();
 }
 
