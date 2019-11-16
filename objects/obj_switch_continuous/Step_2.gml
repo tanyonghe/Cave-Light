@@ -28,6 +28,8 @@ if (instance_exists(linked_inst)) {
 		alarm[0] = 2; // TODO breaks for normal switch // as long as this switch is activated (from being shot at), the event won't run
 		//alarm countdown has to be greater than laser hitbox intervals
 		//but not so great that you can sweep the laser between switches for multi doors
-		audio_play_sound(switch_on, 1, false);
+		if (!audio_is_playing(switch_on)) {
+			audio_play_sound(switch_on, 1, false);
+		}
 	}
 }

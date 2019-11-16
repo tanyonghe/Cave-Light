@@ -1919,6 +1919,14 @@
             }
         },
         {
+            "Key": "df5e94a6-1845-4604-99cd-339ca2041b9e",
+            "Value": {
+                "id": "f2601aed-9c3b-4f76-866a-e02c26a95d29",
+                "resourcePath": "sprites\\spr_angled_ore_2_3\\spr_angled_ore_2_3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e01a66de-2b60-4672-b22f-b744f20b4c98",
             "Value": {
                 "id": "7fbf1699-a873-46ae-9bea-ac2ce2d16b81",
