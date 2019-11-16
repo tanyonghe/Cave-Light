@@ -6,3 +6,6 @@ numOfOptions = 4;
 
 instructions = 0;
 credits = 0;
+
+prevX = 0;
+prevY = 0;
