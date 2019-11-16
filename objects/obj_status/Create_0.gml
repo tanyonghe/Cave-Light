@@ -30,6 +30,18 @@ if (room == Level_3_1 || room == Level_3_2 || room == Level_3_3) {
 }
 
 if (room == Level_4_1 || room == Level_4_2) {
+	if (audio_is_playing(lvl2)) {
+		audio_stop_sound(lvl2);
+	}
+	if (audio_is_playing(lvl4)) {
+		audio_stop_sound(lvl4);
+	}
+	if (!audio_is_playing(lvl3)) {
+		audio_play_sound(lvl3, 10, true);
+	}
+}
+/*
+if (room == Level_4_1 || room == Level_4_2) {
 	if (audio_is_playing(lvl3)) {
 		audio_stop_sound(lvl3);
 	}
@@ -37,3 +49,4 @@ if (room == Level_4_1 || room == Level_4_2) {
 		audio_play_sound(lvl4, 10, true);
 	}
 }
+*/
