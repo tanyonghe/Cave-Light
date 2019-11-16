@@ -11,23 +11,23 @@ draw_sprite(spr_menu_background, 0, midx, midy);
 
 draw_set_colour(c_black);
 draw_set_font(fnt_pause_menu);
-draw_text(540, 412, room_get_name(room));
-draw_text(540, 445, string(global.continues));
+draw_text(498, 430, room_get_name(room));
+draw_text(498, 470, string(global.continues));
 
 //draw_sprite(spr_menu_navigation1, 0, 640, 360 + 200 + 100);
 if (instructions == 0) {
 	//draw_sprite(spr_menu_navigation, 0, 440, 640);
 	
 	if (selected == 0) {
-		draw_sprite(spr_menu_select, 1, 860, midy - 110);
+		draw_sprite(spr_menu_select, 1, 969, 265);
 	}
 
 	else if (selected == 1) {
-		draw_sprite(spr_menu_select, 1, 860, midy - 40);
+		draw_sprite(spr_menu_select, 1, 965, 355);
 	}
 
 	else if (selected == 2) {
-		draw_sprite(spr_menu_select, 1, 870, midy + 30);
+		draw_sprite(spr_menu_select, 1, 975, 445);
 	}
 } else {
 	draw_sprite(spr_instructions_diagram, 0, midx, midy);
