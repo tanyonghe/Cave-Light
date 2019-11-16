@@ -17,6 +17,7 @@ if (keyboard_check(ord("R"))) {
 
 if (keyboard_check_pressed(vk_escape)) {
 	if (!pause) {
+		audio_play_sound(menu_boop, 1, false);
 		instance_create_layer(x, y, "Instructions", obj_pause_menu_controller);
 		pause = true;
 	} 

@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 if (canAdvance) {
+	audio_play_sound(menu_boop, 1, false);
 	global.continues += 1;
 	global.numOfLives = 3;
 	global.game_over = false;

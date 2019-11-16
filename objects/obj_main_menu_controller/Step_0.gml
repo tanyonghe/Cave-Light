@@ -10,22 +10,26 @@ if (!(instructions || credits)) {
 		if (point_in_rectangle(mousex, mousey, 640 - 142, 430 - 22, 640 + 142, 430 + 22)) {
 		    selected = 0;
 		    if (mouse_check_button_pressed(mb_left)) {
+				audio_play_sound(menu_boop, 1, false);
 		        room_goto_next();
 		        //show_message("Start Game");
 		    }
-		} else if (point_in_rectangle(mousex, mousey, 640 - 74, 500 - 22, 640 + 74, 500 + 22)) {
+		} else if (instructions == 0 && point_in_rectangle(mousex, mousey, 640 - 74, 500 - 22, 640 + 74, 500 + 22)) {
 		    selected = 1;
 			if (mouse_check_button_pressed(mb_left)) {
+				audio_play_sound(menu_boop, 1, false);
 		        instructions = 1;
 		    }
-		} else if (point_in_rectangle(mousex, mousey, 640 - 91, 570 - 45, 640 + 91, 570 + 45)) {
+		} else if (credits == 0 && point_in_rectangle(mousex, mousey, 640 - 91, 570 - 45, 640 + 91, 570 + 45)) {
 		    selected = 2;
 			if (mouse_check_button_pressed(mb_left)) {
+				audio_play_sound(menu_boop, 1, false);
 		        credits = 1;
 		    }
 		} else if (point_in_rectangle(mousex, mousey, 640 - 54, 640 - 22, 640 + 54, 640 + 22)) {
 		    selected = 3;
 			if (mouse_check_button_pressed(mb_left)) {
+				audio_play_sound(menu_boop, 1, false);
 		        game_end();
 		    }
 		}
@@ -42,12 +46,16 @@ if (!(instructions || credits)) {
 
 if (mouse_check_button_pressed(mb_left)) {
 	if (point_in_rectangle(mousex, mousey, 640 - 142, 430 - 22, 640 + 142, 430 + 22)) {
+		audio_play_sound(menu_boop, 1, false);
 		room_goto_next();
-	} else if (point_in_rectangle(mousex, mousey, 640 - 74, 500 - 22, 640 + 74, 500 + 22)) {
+	} else if (instructions == 0 && point_in_rectangle(mousex, mousey, 640 - 74, 500 - 22, 640 + 74, 500 + 22)) {
+		audio_play_sound(menu_boop, 1, false);
 		instructions = 1;
-	} else if (point_in_rectangle(mousex, mousey, 640 - 91, 570 - 45, 640 + 91, 570 + 45)) {
+	} else if (credits == 0 && point_in_rectangle(mousex, mousey, 640 - 91, 570 - 45, 640 + 91, 570 + 45)) {
+		audio_play_sound(menu_boop, 1, false);
 		credits = 1;
 	} else if (point_in_rectangle(mousex, mousey, 640 - 54, 640 - 22, 640 + 54, 640 + 22)) {
+		audio_play_sound(menu_boop, 1, false);
 		game_end();
 	}
 }

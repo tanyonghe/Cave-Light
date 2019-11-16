@@ -5,4 +5,5 @@ if (opened) {
 	image_alpha = 1;
 	print_bbox();
 	set_tilemap_within_bbox(collision_map, 1);
+	audio_play_sound(door_close, 1, false);
 }

@@ -20,4 +20,5 @@ bottom = midy + 320
 canAdvance = false;
 alarm[0] = 30;
 
+audio_play_sound(snd_game_over, 1, false);
 instance_deactivate_all(true);
