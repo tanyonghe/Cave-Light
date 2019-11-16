@@ -10,10 +10,12 @@ global.deaths += 1;
 
 if (global.numOfLives > 0) {
 	if (global.checkpointR == room && !global.stageReset) {
+		show_debug_message("Player soft reset");
 		x = global.checkpointX;
 		y = global.checkpointY;
 		camera_set_view_size(view_camera[0], global.cameraW, global.cameraH);
 	} else {
+		show_debug_message("Player hard reset");
 		room_restart();
 	}
 } else {

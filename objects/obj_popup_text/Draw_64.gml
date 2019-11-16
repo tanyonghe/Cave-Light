@@ -20,7 +20,9 @@ draw_rectangle_colour(left, top, right, bottom, c_black, c_black, c_black, c_bla
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
+draw_set_color(c_white);
 draw_text(midx, rectMidY, textString);
+//draw_text_color(midx, rectMidY, textString, c_white, c_white, c_white, c_white, 1)
 
 if (can_dismiss) {
 	draw_text_transformed(midx + 165, rectMidY + 40, "\"Enter\" to dismiss", 0.85, 0.85, 0);

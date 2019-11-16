@@ -24,7 +24,8 @@ if (global.playerControlsEnabled) {
 }
 
 var dy = v_speed;
-v_speed += grav;
+v_speed = min(v_speed + grav, 15);
+//show_debug_message(string(v_speed))
 
 var t1 = tilemap_get_at_pixel(tilemap, bbox_left+17, bbox_bottom + 1) & tile_index_mask;
 var t2 = tilemap_get_at_pixel(tilemap, bbox_right-16, bbox_bottom + 1) & tile_index_mask;

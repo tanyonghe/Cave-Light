@@ -13,6 +13,7 @@ draw_set_colour(c_black);
 draw_set_font(fnt_pause_menu);
 draw_text(498, 430, room_get_name(room));
 draw_text(498, 470, string(global.continues));
+draw_set_font(-1);
 
 //draw_sprite(spr_menu_navigation1, 0, 640, 360 + 200 + 100);
 if (instructions == 0) {
