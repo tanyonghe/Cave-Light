@@ -1,4 +1,8 @@
-/// @description Close Game Menu
+/// @description Escape Window
 // You can write your code in this editor
 
-instance_destroy();
+if (instructions) {
+	instructions = 0;
+} else {
+	instance_destroy();
+}
