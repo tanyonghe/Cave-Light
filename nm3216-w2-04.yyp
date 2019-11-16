@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0d8f6950-9738-4042-abd8-59482325e1be",
+            "Value": {
+                "id": "19c9d68a-7aee-4258-8063-a1083e38b06b",
+                "resourcePath": "sprites\\spr_mirror_ice\\spr_mirror_ice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0dc2c357-d2c7-4a4c-9a6a-ae06d541ae21",
             "Value": {
                 "id": "34b91f2a-60d1-41a2-aa3c-d65eca4dceca",

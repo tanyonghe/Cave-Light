@@ -60,11 +60,10 @@ if hasSurge {
 	//}
 	//// ==================================
 	
-	with (instance_create_layer(x, y, "Invisible_Instances", obj_mirror)) {
+	with (instance_create_layer(x, y, "Water", obj_mirror)) {
 		image_xscale = other.image_xscale;
 		image_yscale = other.image_yscale;
 		image_angle = image_angle + 180;
-		image_alpha = 0.5;
 		mirror_type = "ice";
 	}
 	// make it solid
