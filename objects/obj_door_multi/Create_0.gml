@@ -10,3 +10,7 @@ switch_array = array_create(required_switches, 0);
 
 fully_activated = false; // for switches to check to stay on
 image_blend = make_color_rgb(249, 210, 151); //temp
+
+
+indicator1 = -1;
+indicator2 = -1;
