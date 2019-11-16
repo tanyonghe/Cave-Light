@@ -14,3 +14,5 @@ activated = false;
 
 // for multi doors: each switch connected to it has an index
 switch_index = -1; //default
+
+linked_multidoor_activated = false; // once true, stay green

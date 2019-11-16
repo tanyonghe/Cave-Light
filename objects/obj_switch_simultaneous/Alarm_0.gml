@@ -1,4 +1,7 @@
 /// @description close the linked inst
+if (linked_multidoor_activated) {
+	return;
+}
 
 if (linked_inst.object_index == obj_door_multi) {
 	with (linked_inst) {

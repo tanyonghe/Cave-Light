@@ -10,6 +10,7 @@ for (var i = 0; i < required_switches; i++) {
 }
 
 if (all_switches_on) {
+	fully_activated = true;
 	
 	show_debug_message("ALL SWITCHES ON")
 	if (startClosed) {

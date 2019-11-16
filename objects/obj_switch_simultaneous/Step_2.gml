@@ -1,4 +1,7 @@
 /// @description if still activated, open instance
+if (linked_multidoor_activated) {
+	return;
+}
 
 if (instance_exists(linked_inst)) {	
 	
@@ -10,6 +13,9 @@ if (instance_exists(linked_inst)) {
 				show_debug_message("switch is linked to multi door, setting array at index " + string(other.switch_index));
 				switch_array[other.switch_index] = 1; // indicate that this switch is on
 				event_user(2);
+			}			
+			if (linked_inst.fully_activated) {
+				linked_multidoor_activated = true;
 			}
 		} else {		
 			with (linked_inst) {
