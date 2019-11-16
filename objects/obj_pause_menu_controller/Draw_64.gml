@@ -13,7 +13,7 @@ draw_set_colour(c_maroon);
 draw_set_font(fnt_pause_menu);
 draw_text(498, 430, room_get_name(room));
 draw_text(498, 470, string(global.continues));
-draw_text(midx, midy + 260, "Press 'W' and 'S' to navigate and 'Space' to select");
+draw_text(midx, midy + 260, "Press 'W' and 'S' to navigate and 'Enter' to select");
 draw_set_font(-1);
 
 if (instructions == 0) {

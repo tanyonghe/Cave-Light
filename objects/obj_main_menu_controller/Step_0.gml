@@ -30,10 +30,25 @@ if (!(instructions || credits)) {
 		    }
 		}
 	}
-} else {
+} else if (instructions) {
 	if (mouse_check_button_pressed(mb_left)) {
 		instructions = 0;
+	}
+} else if (credits) {
+	if (mouse_check_button_pressed(mb_left)) {
 		credits = 0;
+	}
+}
+
+if (mouse_check_button_pressed(mb_left)) {
+	if (point_in_rectangle(mousex, mousey, 640 - 142, 430 - 22, 640 + 142, 430 + 22)) {
+		room_goto_next();
+	} else if (point_in_rectangle(mousex, mousey, 640 - 74, 500 - 22, 640 + 74, 500 + 22)) {
+		instructions = 1;
+	} else if (point_in_rectangle(mousex, mousey, 640 - 91, 570 - 45, 640 + 91, 570 + 45)) {
+		credits = 1;
+	} else if (point_in_rectangle(mousex, mousey, 640 - 54, 640 - 22, 640 + 54, 640 + 22)) {
+		game_end();
 	}
 }
 

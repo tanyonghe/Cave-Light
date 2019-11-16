@@ -12,4 +12,7 @@ selected = 0;
 numOfOptions = 3;
 instructions = 0;
 
+prevX = 0;
+prevY = 0;
+
 instance_deactivate_all(true);
