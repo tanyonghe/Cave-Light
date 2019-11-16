@@ -9,8 +9,8 @@
         "46b629ed-6afb-4329-8d35-7faddf915d8b",
         "4deaa230-526b-4d00-a667-be89ea7770b4",
         "ab664b02-6023-4a07-903e-11adaf5220bd",
-        "5375cfd0-57d6-4b28-a0d2-758da3ae65da",
-        "491ad625-f5fb-4bbf-b98f-57780dcb91f2"
+        "491ad625-f5fb-4bbf-b98f-57780dcb91f2",
+        "5375cfd0-57d6-4b28-a0d2-758da3ae65da"
     ],
     "filterType": "GMSprite",
     "folderName": "switches and doors",

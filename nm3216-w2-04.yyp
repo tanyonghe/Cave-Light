@@ -1335,6 +1335,14 @@
             }
         },
         {
+            "Key": "b68be904-da6c-421e-8bfa-82dc99c0e6ce",
+            "Value": {
+                "id": "5a52afd7-591c-4625-bd59-4bd862ee8fb1",
+                "resourcePath": "views\\de31407e-2f97-4b45-900b-14150645a95f-room.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b8c485ba-3c99-4391-a8e2-c8c17c7a12f6",
             "Value": {
                 "id": "69cd307d-f670-4d96-891d-10b9b52e74c7",
