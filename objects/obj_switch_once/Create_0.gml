@@ -11,3 +11,5 @@ action = "open" //default;
 
 used = false;
 reusable = false;
+
+image_angle = 0;

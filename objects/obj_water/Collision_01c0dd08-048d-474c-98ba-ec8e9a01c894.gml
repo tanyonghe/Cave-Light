@@ -32,7 +32,7 @@ if hasSurge {
 	//	return;
 	//}
 	
-	with (instance_create_layer(x, y, "Invisible_Instances", obj_electrified_water)) {
+	with (instance_create_layer(x, y, "Instances", obj_electrified_water)) {
 		//create three overlapping mirrors to avoid the non reflection bug
 		
 		image_xscale = other.image_xscale;
