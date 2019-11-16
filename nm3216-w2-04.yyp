@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "6e5d81e5-0dd9-498e-b16b-e5255fad1d0f",
+            "Value": {
+                "id": "8445021a-8b0e-4280-b129-64ea66197a2b",
+                "resourcePath": "sprites\\spr_angled_ore_3_2_a\\spr_angled_ore_3_2_a.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6ebafb6f-919a-4941-82e6-6d6d98c68630",
             "Value": {
                 "id": "94a13def-780e-4882-832c-fd35ca171766",
@@ -1875,6 +1883,14 @@
             "Value": {
                 "id": "92bf64f0-3734-494b-b187-d67cea67f477",
                 "resourcePath": "sprites\\spr_gun\\spr_gun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e7ed49f7-5ad0-4787-9a55-187b9e6d8e40",
+            "Value": {
+                "id": "0697f680-0bfc-4603-9551-e691f5b11ffd",
+                "resourcePath": "sprites\\spr_angled_ore_3_2_b\\spr_angled_ore_3_2_b.yy",
                 "resourceType": "GMSprite"
             }
         },
