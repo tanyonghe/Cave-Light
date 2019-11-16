@@ -30,12 +30,10 @@ if (!instance_exists(obj_pause_menu_controller)) {
 	
 //}
 
-if (global.game_over == true && game_over_render == false) {
+if (global.game_over && !game_over_render ) {
 	game_over_render = true;
 	alarm[0] = 30;
-}
-
-else if (global.game_over != true && game_over_render == true) {
+} else if (!global.game_over) {
 	game_over_render = false;
 }
 
@@ -60,13 +58,13 @@ if (!pause) {
 	//var clamped = clamp(0.4 * effect, 0, 0.6);
 	//show_debug_message("DIST: " + string(dist) + ", EFFECT: "+ string(effect) + " | CLAMPED: " + string(clamped));
 	
-		if (mouse_x - following.x > threshold_w) {
-			weight = min(0.7, (mouse_x - following.x) / (view_w * 1.2));
-			cx = lerp(following.x, mouse_x - threshold_w, weight) - (view_w/2);
-		} else if (mouse_x - following.x < -threshold_w) {
-			weight = min(0.7, (following.x - mouse_x) / (view_w * 1.2));
-			cx = lerp(following.x, mouse_x + threshold_w, weight) - (view_w/2);
-		}
+	if (mouse_x - following.x > threshold_w) {
+		weight = min(0.7, (mouse_x - following.x) / (view_w * 1.2));
+		cx = lerp(following.x, mouse_x - threshold_w, weight) - (view_w/2);
+	} else if (mouse_x - following.x < -threshold_w) {
+		weight = min(0.7, (following.x - mouse_x) / (view_w * 1.2));
+		cx = lerp(following.x, mouse_x + threshold_w, weight) - (view_w/2);
+	}
 	
 	if (mouse_y - following.y > threshold_h) {
 		weight = min(0.7, (mouse_y - following.y) / (view_h * 1.35));

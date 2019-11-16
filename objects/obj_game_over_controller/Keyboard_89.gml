@@ -7,9 +7,10 @@ if (canAdvance) {
 	global.game_over = false;
 	
 	if (global.checkpointR == room) {
-		obj_status.game_over = false;
-		obj_status.game_over_render = false;
+		//obj_status.game_over = false;
+		//obj_status.game_over_render = false;
 		
+		instance_activate_object(obj_player);
 		with (obj_player) {
 			move_speed = 6;
 			jump_impulse = 8;
