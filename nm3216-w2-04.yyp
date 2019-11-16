@@ -895,6 +895,14 @@
             }
         },
         {
+            "Key": "7bd203c0-b345-49a6-96cf-b239a54e898c",
+            "Value": {
+                "id": "7b36cc53-f190-49da-9c21-f4bc8e9f9bd4",
+                "resourcePath": "sprites\\spr_door_indicator\\spr_door_indicator.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7c29dd1e-b33b-4473-b7f8-097d8a6ee8c0",
             "Value": {
                 "id": "999799cc-7119-4356-a4ee-0f177f8bfd60",
@@ -1975,6 +1983,14 @@
             }
         },
         {
+            "Key": "fb77be58-bd4e-43ed-87aa-86e9c8fd6e9c",
+            "Value": {
+                "id": "c55d71ec-f199-4be9-9405-6273ab3d16fa",
+                "resourcePath": "sounds\\switch_cont\\switch_cont.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "fd429533-ff8a-4825-8d5c-ce93f94f8177",
             "Value": {
                 "id": "da050ef8-30e3-4e76-b59b-bea58fd8340a",
@@ -1988,6 +2004,14 @@
                 "id": "357232b7-07f0-479e-853e-c95d6a081117",
                 "resourcePath": "tilesets\\til_background_level_1\\til_background_level_1.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "ff0c0c30-8532-4961-903b-da58f8416e9d",
+            "Value": {
+                "id": "ffea7a58-0a5d-4a97-bec0-40a55dffb309",
+                "resourcePath": "objects\\obj_door_indicator\\obj_door_indicator.yy",
+                "resourceType": "GMObject"
             }
         },
         {
