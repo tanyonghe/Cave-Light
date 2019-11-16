@@ -6,6 +6,15 @@ game_over_render = false;
 cooldown = false;
 
 if (room == Level_1_1 || room == Level_1_2_a || room == Level_1_2_b || room == Level_1_3) {
+	if (audio_is_playing(lvl2)) {
+		audio_stop_sound(lvl2);
+	}
+	if (audio_is_playing(lvl3)) {
+		audio_stop_sound(lvl3);
+	}
+	if (audio_is_playing(lvl4)) {
+		audio_stop_sound(lvl4);
+	}
 	if (!audio_is_playing(lvl1)) {
 		audio_play_sound(lvl1, 10, true);
 	}
