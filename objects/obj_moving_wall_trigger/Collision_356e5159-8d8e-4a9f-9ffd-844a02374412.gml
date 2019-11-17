@@ -8,7 +8,7 @@ if (instance_exists(obj_moving_wall)) {
 		obj_moving_wall.x = x - (32 * 19);
 	}
 } else {
-	instance_create_layer(-448, 1320, "Instances", obj_moving_wall);
+	instance_create_layer(-448, 1320, "Wall", obj_moving_wall);
 }
 
 instance_destroy();

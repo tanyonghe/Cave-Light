@@ -10,3 +10,5 @@ canToggle = true;
 //used = false;
 
 image_blend = make_color_rgb(124, 212, 255); //temp
+
+image_angle = 0;

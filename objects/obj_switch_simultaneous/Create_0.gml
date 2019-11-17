@@ -16,3 +16,5 @@ activated = false;
 switch_index = -1; //default
 
 linked_multidoor_activated = false; // once true, stay green
+
+image_angle = 0;

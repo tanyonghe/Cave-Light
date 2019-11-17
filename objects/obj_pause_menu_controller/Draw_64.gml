@@ -34,3 +34,5 @@ if (instructions == 0) {
 	draw_text(midx, midy + 260, "Press 'Esc' to go back");
 	//draw_sprite(spr_menu_spacebar1, 0, midx, midy + 300);
 }
+
+draw_set_colour(c_white);

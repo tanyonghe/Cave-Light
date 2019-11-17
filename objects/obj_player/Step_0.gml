@@ -241,6 +241,6 @@ if (instance_exists(obj_platform)) {
 
 cooldown = max(0, cooldown - 1);
 
-if (keyboard_check_pressed(vk_alt)) {
-	invuln = !invuln;
-}
+//if (keyboard_check_pressed(vk_alt)) {
+//	invuln = !invuln;
+//}

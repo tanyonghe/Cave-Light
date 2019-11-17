@@ -8,3 +8,5 @@ action = true //default - true is user(0), false is user(1)
 canToggle = true;
 
 //used = false;
+
+image_angle = 0;

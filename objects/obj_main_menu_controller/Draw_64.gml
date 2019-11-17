@@ -59,6 +59,6 @@ else if (instructions == 1) {
 
 else if (credits == 1) {
 	//draw_sprite(spr_menu_background, 0, 640, 360);
-	draw_sprite(spr_credits_names, 0, 640, 460);
+	draw_sprite(spr_credits_names, 0, 645, 400);
 	//draw_sprite(spr_menu_spacebar1, 0, 640, 360 + 200 + 100);
 }
